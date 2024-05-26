@@ -776,17 +776,17 @@
   margin-bottom: 20px;
 }
 .hot_deals_card_draft .hot_deals_char_item1::before, .hot_deals .hot_deals_box .hot_deals_card .hot_deals_char_item1::before {
-  content: url(../../image/hot_deals/engine.svg);
+  content: url(../image/hot_deals/engine.svg);
   vertical-align: middle;
   margin-right: 4px;
 }
 .hot_deals_card_draft .hot_deals_char_item2::before, .hot_deals .hot_deals_box .hot_deals_card .hot_deals_char_item2::before {
-  content: url(../../image/hot_deals/trans.svg);
+  content: url(../image/hot_deals/trans.svg);
   vertical-align: middle;
   margin-right: 4px;
 }
 .hot_deals_card_draft .hot_deals_char_item3::before, .hot_deals .hot_deals_box .hot_deals_card .hot_deals_char_item3::before {
-  content: url(../../image/hot_deals/car.svg);
+  content: url(../image/hot_deals/car.svg);
   vertical-align: middle;
   margin-right: 4px;
 }
