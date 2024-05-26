@@ -14,7 +14,7 @@
   background-color: #f1f0eb;
   list-style-type: none !important;
   text-decoration: none !important;
-  font-family: "Eurostile Extended", sans-serif;
+  font-family: "Eurostile Extended", sans-serif !important;
 }
 
 .main_page, .main_page_sale {
