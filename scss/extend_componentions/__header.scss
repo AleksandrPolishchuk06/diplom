@@ -1,0 +1,80 @@
+.header_ {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 54px 60px;
+    text-decoration: none !important;
+
+    .header_custom {
+        display: flex;
+        padding: 0 30px;
+        align-items: center;
+        justify-content: space-between;
+
+        &_nav {
+            display: flex;
+            align-items: center;
+
+            .header_custom_item {
+                margin-right: 20px;
+            }
+
+        }
+
+        &_contact {
+            display: flex;
+            align-items: center;
+
+            .custom_contact_number {
+                margin-right: 20px;
+            }
+
+            .custom_contact_reqeust {
+                padding: 17px 51px;
+                background-color: #000;
+                font-size: 14px;
+                margin-right: 20px;
+                color: white;
+                text-align: center;
+                margin-bottom: 0px;
+                text-decoration: none;
+            }
+
+            .header_logo_whatsap {
+                width: 25px;
+                margin-right: 20px;
+            }
+
+            .header_logo_telegram {
+                width: 25px;
+            }
+        }
+
+    }
+
+    .header_page {
+        display: grid;
+        grid-template-columns: 201px auto;
+        border-bottom: 1px solid $black_bg_btn_header;
+        border-top: 1px solid $black_bg_btn_header;
+
+        &_logo {
+            width: 201px;
+            height: 52px;
+            padding-left: 30px;
+            align-self: center;
+        }
+
+        .header_pege_nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .for_sale_link {
+                margin-right: 30px;
+                color: $black_bg_btn_header;
+                text-decoration: none;
+                font-size: 16px;
+            }
+        }
+    }
+}

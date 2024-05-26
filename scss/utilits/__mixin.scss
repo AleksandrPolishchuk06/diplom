@@ -1,0 +1,18 @@
+@mixin font_style ($weight, $size, $spacing, $color) {
+    font-weight: $weight;
+    font-size: $size;
+    letter-spacing: $spacing;
+    color: $color;
+
+}
+
+
+@mixin btn_style ($border-radius, $width, $height, $text-align, $font-weight, $font-size, $line-height ) {
+    border-radius: $border-radius;
+    width: $width;
+    height: $height;
+    text-align: $text-align;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+}

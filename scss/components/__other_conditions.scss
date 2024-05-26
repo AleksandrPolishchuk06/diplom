@@ -1,0 +1,53 @@
+.other_conditions {
+
+    background-image: url(../../image/conditions/condition_bg.png);
+    margin: 20px auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 95vw;
+    height: 98vh;
+    background-position: center;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: end;
+
+    .other_conditions_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 10px;
+        width: 315px;
+        height: 325px;
+        backdrop-filter: blur(1px);
+        background: rgba(255, 255, 255, 0.6);
+        padding: 40px 5px;
+        gap: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+
+        .other_conditions_title {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 130%;
+            letter-spacing: 0.01em;
+            color: #000;
+            text-align: center;
+        }
+
+        .other_conditions_desc {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130%;
+            letter-spacing: 0.01em;
+            color: #000;
+        }
+
+
+    }
+
+
+
+}

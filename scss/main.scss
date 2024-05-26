@@ -1,0 +1,26 @@
+@import "../scss/utilits/_reset";
+@import "../scss/utilits/_mixin";
+@import "../scss/utilits/var/_colors";
+@import "../scss/utilits/var/_fonts";
+
+
+// components -main page
+@import "../scss/components/_tempelates";
+@import "../scss/components/_body";
+@import "../scss/components/_main_baner";
+@import "../scss/components/_second_baner";
+@import "../scss/components/_choose_type";
+@import "../scss/components/_hot_deals";
+@import "../scss/components/_maseratti";
+@import "../scss/components/_buyer_conditions";
+@import "../scss/components/_other_conditions";
+@import "../scss/components/_fotter";
+@import "../scss/extend_componentions/_header";
+@import "../scss/extend_componentions/_extend_card_page";
+@import "../scss/extend_componentions/_main_goods_card_section";
+@import "../scss/extend_componentions/_fotter_dubl";
+@import "../scss/extend_componentions/_goods_cadr";
+@import "../scss/components/_main_for_sale";
+
+
+// components-goods card

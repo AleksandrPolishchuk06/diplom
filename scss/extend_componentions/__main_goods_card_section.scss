@@ -1,0 +1,208 @@
+.main_goods_card {
+    display: grid;
+    // grid-template-columns: 60% 40%;
+    width: 100%;
+    padding: 3%;
+    justify-self: center;
+    text-decoration: none !important;
+
+
+    .r-30 {
+        border-radius: 30px;
+    }
+
+    .carousel-control-prev {
+        top: 80%;
+        left: 75%;
+        width: 50px;
+        height: 30px;
+        background: $border_color_gray;
+        opacity: 0.5;
+    }
+
+    .carousel-control-next {
+        top: 80%;
+        right: 5%;
+        width: 50px;
+        height: 30px;
+        background: $border_color_gray;
+        opacity: 0.5;
+    }
+
+
+    .goods_card {
+        .goods_card_nav {
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            align-items: end;
+            margin-bottom: 59px;
+
+            .goods_card_nav_link {
+                margin-right: 10px;
+                color: black;
+                text-decoration: none;
+
+            }
+
+            &_item::before {
+                content: url(../../image/second_page/•.svg);
+            }
+
+
+        }
+
+        .goods_card_title {
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 130%;
+            letter-spacing: 0.09em;
+            color: #000;
+            margin-bottom: 30px;
+        }
+
+        .goods_card_box {
+            display: grid;
+            grid-template-columns: 60% 40%;
+            gap: 0 10px;
+
+            .goods_card_car {
+                .car_baner {
+                    width: 100%;
+                }
+            }
+
+            .car_baner_box {
+                // border-radius: 30px;
+                width: 100%;
+                height: fit-content;
+                // border: 1px solid white;
+                // background: #fff;
+
+                .car_box_description {
+                    background: #fff;
+                    border-radius: 30px 30px 0 0px;
+                    padding: 3%;
+
+                    .car_box_title {
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 130%;
+                        letter-spacing: 0.09em;
+                        color: #000;
+                        text-align: start;
+                    }
+
+                    .car_box_text {
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 130%;
+                        letter-spacing: 0.09em;
+                        color: #000;
+                        text-align: start;
+                    }
+                }
+
+                .car_box_characteristic {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 0px 0px 30px 30px;
+
+
+                    .car_box_item {
+                        background: #fff;
+                        border: 1px solid $background_color;
+
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        padding: 3%;
+                        width: 33.333%;
+                        height: 174px;
+                        // border-radius: 0 0 30px 30px;
+
+                    }
+
+                    .box_item_symbol {
+                        width: 22px;
+                    }
+
+                }
+            }
+
+            .card_car_char_list {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                border-radius: 30px;
+                width: 95%;
+                height: 695px;
+                background: #fff;
+                padding: 3%;
+
+                .char_list_title {
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 130%;
+                    letter-spacing: 0.09em;
+                    color: #000;
+                    margin-bottom: 20px;
+                }
+
+                .char_list_value {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 495px;
+
+
+                    .value_title {
+                        display: flex;
+                        justify-content: space-between;
+                        font-family: var(--font-family);
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 130%;
+                        letter-spacing: 0.09em;
+                        color: #000;
+
+                        .value_q {
+                            font-weight: bold;
+                            font-size: 14px;
+                            line-height: 130%;
+                            letter-spacing: 0.09em;
+                            text-align: right;
+                            color: #000;
+                        }
+
+                    }
+
+
+                }
+
+                .char_list_btn {
+                    border: 1px solid #4f4f4f;
+                    border-radius: 8px;
+                    padding: 4% 20%;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 130%;
+                    letter-spacing: 0.17em;
+                    color: #4f4f4f;
+                    text-align: center;
+                    text-decoration: none !important;
+
+                }
+
+
+
+
+            }
+        }
+
+
+    }
+
+}
