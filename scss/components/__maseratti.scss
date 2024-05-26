@@ -1,6 +1,21 @@
-.maseratti {
-    width: 100%;
-    padding: 3%;
+.masseratti {
+    margin: 30px auto;
+
+    width: 95%;
+    height: 55vh;
+    padding: 5%;
     justify-content: center;
-    // background-image: url(../../image/maseratti/masserati.png);
+    background-image: url(../image/maseratti/1.jpg);
+    // filter: sepia(70%);
+    filter: grayscale(100%);
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+
+}
+
+.masseratti:hover {
+    filter: grayscale(0%);
+    transition-duration: 1s;
 }

@@ -58,7 +58,7 @@
 
 
         .body_type:hover {
-            animation: animation_name3 1s, ease, both;
+            animation: animation_name3 1s, ease, infinite;
             cursor: pointer;
         }
 
@@ -70,7 +70,7 @@
 
                 @keyframes animation_name3 {
                     0% {
-                        transform: translateY(-100px);
+                        transform: translateY(-1px);
                         transform: translateX(-10px);
 
                     }
