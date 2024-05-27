@@ -1,4 +1,4 @@
-.header {
+.header_white {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 54px 60px;
@@ -27,7 +27,7 @@
             .custom_contact_number {
                 margin-right: 20px;
                 text-decoration: none;
-                color: $black_font_color !important;
+                color: $border_white_color !important;
             }
 
             .custom_contact_reqeust {
@@ -55,8 +55,8 @@
     .header_page {
         display: grid;
         grid-template-columns: 201px auto;
-        border-bottom: 1px solid $black_bg_btn_header;
-        border-top: 1px solid $black_bg_btn_header;
+        border-bottom: 1px solid $border_white_color !important;
+        border-top: 1px solid $border_white_color !important;
 
         &_logo {
             width: 201px;
@@ -72,7 +72,7 @@
 
             .for_sale_link {
                 margin-right: 30px;
-                color: $black_bg_btn_header;
+                color: $main_font_color !important;
                 text-decoration: none;
                 font-size: 16px;
             }
@@ -94,7 +94,7 @@
     }
 
     .navbar-nav .nav-link {
-        color: $black_bg_btn_header !important;
+        color: $border_white_color !important;
         text-decoration: none !important;
         font-size: 16px !important;
         margin-right: 2vw !important;
@@ -110,7 +110,7 @@
 
 
 @media (max-width:998px) {
-    .header {
+    .header_white {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 65px;

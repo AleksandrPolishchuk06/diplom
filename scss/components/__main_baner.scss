@@ -15,16 +15,7 @@
 
 
     .header {
-        @extend .header_;
-
-        .header_page {
-            border-bottom: 1px solid $border_white_color !important;
-            border-top: 1px solid $border_white_color !important;
-        }
-
-        .for_sale_link {
-            color: $main_font_color !important;
-        }
+        @extend .header_white;
     }
 
     .main_baner {
@@ -63,10 +54,9 @@
                 width: 364px;
                 position: relative;
 
-
                 .baner_logo_text {
                     position: absolute;
-                    bottom: 20px;
+                    bottom: 10px;
                     right: 140px;
                     font-weight: 700;
                     font-size: 18px;
