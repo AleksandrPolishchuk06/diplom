@@ -27,6 +27,9 @@
   background-position: center;
   width: 100%;
   height: 95vh;
+  border-radius: 0 0 30px 30px;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .main_page .header .header_page, .main_page_sale .header .header_page {
   border-bottom: 1px solid white !important;
@@ -356,7 +359,7 @@
 }
 
 .other_conditions {
-  background-image: url(../../image/conditions/condition_bg.png);
+  background-image: url(../image/conditions/condition_bg.png);
   margin: 20px auto;
   background-size: cover;
   background-repeat: no-repeat;
@@ -401,33 +404,34 @@
   color: #000;
 }
 
-.header_, .header_n, .main_page .header, .main_page_sale .header {
+.header_, .main_page .header, .main_page_sale .header {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 54px 60px;
   text-decoration: none !important;
 }
-.header_ .header_custom, .header_n .header_custom, .main_page .header .header_custom, .main_page_sale .header .header_custom {
+.header_ .header_custom, .main_page .header .header_custom, .main_page_sale .header .header_custom {
   display: flex;
   padding: 0 30px;
   align-items: center;
   justify-content: space-between;
 }
-.header_ .header_custom_nav, .header_n .header_custom_nav, .main_page .header .header_custom_nav, .main_page_sale .header .header_custom_nav {
+.header_ .header_custom_nav, .main_page .header .header_custom_nav, .main_page_sale .header .header_custom_nav {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+.header_ .header_custom_nav .header_custom_item:not(:last-child), .main_page .header .header_custom_nav .header_custom_item:not(:last-child), .main_page_sale .header .header_custom_nav .header_custom_item:not(:last-child) {
+  margin-right: 20px;
+}
+.header_ .header_custom_contact, .main_page .header .header_custom_contact, .main_page_sale .header .header_custom_contact {
   display: flex;
   align-items: center;
 }
-.header_ .header_custom_nav .header_custom_item, .header_n .header_custom_nav .header_custom_item, .main_page .header .header_custom_nav .header_custom_item, .main_page_sale .header .header_custom_nav .header_custom_item {
+.header_ .header_custom_contact .custom_contact_number, .main_page .header .header_custom_contact .custom_contact_number, .main_page_sale .header .header_custom_contact .custom_contact_number {
   margin-right: 20px;
 }
-.header_ .header_custom_contact, .header_n .header_custom_contact, .main_page .header .header_custom_contact, .main_page_sale .header .header_custom_contact {
-  display: flex;
-  align-items: center;
-}
-.header_ .header_custom_contact .custom_contact_number, .header_n .header_custom_contact .custom_contact_number, .main_page .header .header_custom_contact .custom_contact_number, .main_page_sale .header .header_custom_contact .custom_contact_number {
-  margin-right: 20px;
-}
-.header_ .header_custom_contact .custom_contact_reqeust, .header_n .header_custom_contact .custom_contact_reqeust, .main_page .header .header_custom_contact .custom_contact_reqeust, .main_page_sale .header .header_custom_contact .custom_contact_reqeust {
+.header_ .header_custom_contact .custom_contact_reqeust, .main_page .header .header_custom_contact .custom_contact_reqeust, .main_page_sale .header .header_custom_contact .custom_contact_reqeust {
   padding: 17px 51px;
   background-color: #000;
   font-size: 14px;
@@ -437,48 +441,48 @@
   margin-bottom: 0px;
   text-decoration: none;
 }
-.header_ .header_custom_contact .header_logo_whatsap, .header_n .header_custom_contact .header_logo_whatsap, .main_page .header .header_custom_contact .header_logo_whatsap, .main_page_sale .header .header_custom_contact .header_logo_whatsap {
+.header_ .header_custom_contact .header_logo_whatsap, .main_page .header .header_custom_contact .header_logo_whatsap, .main_page_sale .header .header_custom_contact .header_logo_whatsap {
   width: 25px;
   margin-right: 20px;
 }
-.header_ .header_custom_contact .header_logo_telegram, .header_n .header_custom_contact .header_logo_telegram, .main_page .header .header_custom_contact .header_logo_telegram, .main_page_sale .header .header_custom_contact .header_logo_telegram {
+.header_ .header_custom_contact .header_logo_telegram, .main_page .header .header_custom_contact .header_logo_telegram, .main_page_sale .header .header_custom_contact .header_logo_telegram {
   width: 25px;
 }
-.header_ .header_page, .header_n .header_page, .main_page .header .header_page, .main_page_sale .header .header_page {
+.header_ .header_page, .main_page .header .header_page, .main_page_sale .header .header_page {
   display: grid;
   grid-template-columns: 201px auto;
   border-bottom: 1px solid #000;
   border-top: 1px solid #000;
 }
-.header_ .header_page_logo, .header_n .header_page_logo, .main_page .header .header_page_logo, .main_page_sale .header .header_page_logo {
+.header_ .header_page_logo, .main_page .header .header_page_logo, .main_page_sale .header .header_page_logo {
   width: 201px;
   height: 52px;
   padding-left: 30px;
   align-self: center;
 }
-.header_ .header_page .header_pege_nav, .header_n .header_page .header_pege_nav, .main_page .header .header_page .header_pege_nav, .main_page_sale .header .header_page .header_pege_nav {
+.header_ .header_page .header_pege_nav, .main_page .header .header_page .header_pege_nav, .main_page_sale .header .header_page .header_pege_nav {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.header_ .header_page .header_pege_nav .for_sale_link, .header_n .header_page .header_pege_nav .for_sale_link, .main_page .header .header_page .header_pege_nav .for_sale_link, .main_page_sale .header .header_page .header_pege_nav .for_sale_link {
+.header_ .header_page .header_pege_nav .for_sale_link, .main_page .header .header_page .header_pege_nav .for_sale_link, .main_page_sale .header .header_page .header_pege_nav .for_sale_link {
   margin-right: 30px;
   color: #000;
   text-decoration: none;
   font-size: 16px;
 }
 
-.main_goods_card, .main_n {
+.main_goods_card {
   display: grid;
   width: 100%;
   padding: 3%;
   justify-self: center;
   text-decoration: none !important;
 }
-.main_goods_card .r-30, .main_n .r-30 {
+.main_goods_card .r-30 {
   border-radius: 30px;
 }
-.main_goods_card .carousel-control-prev, .main_n .carousel-control-prev {
+.main_goods_card .carousel-control-prev {
   top: 80%;
   left: 75%;
   width: 50px;
@@ -486,7 +490,7 @@
   background: #4f4f4f;
   opacity: 0.5;
 }
-.main_goods_card .carousel-control-next, .main_n .carousel-control-next {
+.main_goods_card .carousel-control-next {
   top: 80%;
   right: 5%;
   width: 50px;
@@ -494,22 +498,22 @@
   background: #4f4f4f;
   opacity: 0.5;
 }
-.main_goods_card .goods_card .goods_card_nav, .main_n .goods_card .goods_card_nav {
+.main_goods_card .goods_card .goods_card_nav {
   width: 100%;
   display: flex;
   justify-content: start;
   align-items: end;
   margin-bottom: 59px;
 }
-.main_goods_card .goods_card .goods_card_nav .goods_card_nav_link, .main_n .goods_card .goods_card_nav .goods_card_nav_link {
+.main_goods_card .goods_card .goods_card_nav .goods_card_nav_link {
   margin-right: 10px;
   color: black;
   text-decoration: none;
 }
-.main_goods_card .goods_card .goods_card_nav_item::before, .main_n .goods_card .goods_card_nav_item::before {
-  content: url(../../image/second_page/•.svg);
+.main_goods_card .goods_card .goods_card_nav_item::before {
+  content: url(../image/second_page/•.svg);
 }
-.main_goods_card .goods_card .goods_card_title, .main_n .goods_card .goods_card_title {
+.main_goods_card .goods_card .goods_card_title {
   font-weight: 400;
   font-size: 32px;
   line-height: 130%;
@@ -517,25 +521,25 @@
   color: #000;
   margin-bottom: 30px;
 }
-.main_goods_card .goods_card .goods_card_box, .main_n .goods_card .goods_card_box {
+.main_goods_card .goods_card .goods_card_box {
   display: grid;
   grid-template-columns: 60% 40%;
   gap: 0 10px;
 }
-.main_goods_card .goods_card .goods_card_box .goods_card_car .car_baner, .main_n .goods_card .goods_card_box .goods_card_car .car_baner {
+.main_goods_card .goods_card .goods_card_box .goods_card_car .car_baner {
   width: 100%;
 }
-.main_goods_card .goods_card .goods_card_box .car_baner_box, .main_n .goods_card .goods_card_box .car_baner_box {
+.main_goods_card .goods_card .goods_card_box .car_baner_box {
   width: 100%;
   height: -moz-fit-content;
   height: fit-content;
 }
-.main_goods_card .goods_card .goods_card_box .car_baner_box .car_box_description, .main_n .goods_card .goods_card_box .car_baner_box .car_box_description {
+.main_goods_card .goods_card .goods_card_box .car_baner_box .car_box_description {
   background: #fff;
   border-radius: 30px 30px 0 0px;
   padding: 3%;
 }
-.main_goods_card .goods_card .goods_card_box .car_baner_box .car_box_description .car_box_title, .main_n .goods_card .goods_card_box .car_baner_box .car_box_description .car_box_title {
+.main_goods_card .goods_card .goods_card_box .car_baner_box .car_box_description .car_box_title {
   font-weight: 400;
   font-size: 24px;
   line-height: 130%;
@@ -543,7 +547,7 @@
   color: #000;
   text-align: start;
 }
-.main_goods_card .goods_card .goods_card_box .car_baner_box .car_box_description .car_box_text, .main_n .goods_card .goods_card_box .car_baner_box .car_box_description .car_box_text {
+.main_goods_card .goods_card .goods_card_box .car_baner_box .car_box_description .car_box_text {
   font-weight: 300;
   font-size: 16px;
   line-height: 130%;
@@ -551,14 +555,14 @@
   color: #000;
   text-align: start;
 }
-.main_goods_card .goods_card .goods_card_box .car_baner_box .car_box_characteristic, .main_n .goods_card .goods_card_box .car_baner_box .car_box_characteristic {
+.main_goods_card .goods_card .goods_card_box .car_baner_box .car_box_characteristic {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   border-radius: 0px 0px 30px 30px;
 }
-.main_goods_card .goods_card .goods_card_box .car_baner_box .car_box_characteristic .car_box_item, .main_n .goods_card .goods_card_box .car_baner_box .car_box_characteristic .car_box_item {
+.main_goods_card .goods_card .goods_card_box .car_baner_box .car_box_characteristic .car_box_item {
   background: #fff;
   border: 1px solid #f1f0eb;
   display: flex;
@@ -568,10 +572,10 @@
   width: 33.333%;
   height: 174px;
 }
-.main_goods_card .goods_card .goods_card_box .car_baner_box .car_box_characteristic .box_item_symbol, .main_n .goods_card .goods_card_box .car_baner_box .car_box_characteristic .box_item_symbol {
+.main_goods_card .goods_card .goods_card_box .car_baner_box .car_box_characteristic .box_item_symbol {
   width: 22px;
 }
-.main_goods_card .goods_card .goods_card_box .card_car_char_list, .main_n .goods_card .goods_card_box .card_car_char_list {
+.main_goods_card .goods_card .goods_card_box .card_car_char_list {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -581,7 +585,7 @@
   background: #fff;
   padding: 3%;
 }
-.main_goods_card .goods_card .goods_card_box .card_car_char_list .char_list_title, .main_n .goods_card .goods_card_box .card_car_char_list .char_list_title {
+.main_goods_card .goods_card .goods_card_box .card_car_char_list .char_list_title {
   font-weight: 400;
   font-size: 24px;
   line-height: 130%;
@@ -589,13 +593,13 @@
   color: #000;
   margin-bottom: 20px;
 }
-.main_goods_card .goods_card .goods_card_box .card_car_char_list .char_list_value, .main_n .goods_card .goods_card_box .card_car_char_list .char_list_value {
+.main_goods_card .goods_card .goods_card_box .card_car_char_list .char_list_value {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 495px;
 }
-.main_goods_card .goods_card .goods_card_box .card_car_char_list .char_list_value .value_title, .main_n .goods_card .goods_card_box .card_car_char_list .char_list_value .value_title {
+.main_goods_card .goods_card .goods_card_box .card_car_char_list .char_list_value .value_title {
   display: flex;
   justify-content: space-between;
   font-family: var(--font-family);
@@ -605,7 +609,7 @@
   letter-spacing: 0.09em;
   color: #000;
 }
-.main_goods_card .goods_card .goods_card_box .card_car_char_list .char_list_value .value_title .value_q, .main_n .goods_card .goods_card_box .card_car_char_list .char_list_value .value_title .value_q {
+.main_goods_card .goods_card .goods_card_box .card_car_char_list .char_list_value .value_title .value_q {
   font-weight: bold;
   font-size: 14px;
   line-height: 130%;
@@ -613,7 +617,7 @@
   text-align: right;
   color: #000;
 }
-.main_goods_card .goods_card .goods_card_box .card_car_char_list .char_list_btn, .main_n .goods_card .goods_card_box .card_car_char_list .char_list_btn {
+.main_goods_card .goods_card .goods_card_box .card_car_char_list .char_list_btn {
   border: 1px solid #4f4f4f;
   border-radius: 8px;
   padding: 4% 20%;
@@ -626,66 +630,69 @@
   text-decoration: none !important;
 }
 
-.footer_dubl, .footer, .footer_n {
+.footer_dubl, .footer {
   border-top: 1px solid white;
   width: 100%;
   display: grid;
+  background-image: url(../image/footer/footer.png);
+  background-position: center;
+  background-size: cover;
 }
-.footer_dubl .footer_information, .footer .footer_information, .footer_n .footer_information {
+.footer_dubl .footer_information, .footer .footer_information {
   display: grid;
   grid-template-columns: 20% 70%;
   gap: 5%;
   padding: 3%;
 }
-.footer_dubl .footer_information .footer_information_nav .footer_information_logo, .footer .footer_information .footer_information_nav .footer_information_logo, .footer_n .footer_information .footer_information_nav .footer_information_logo {
+.footer_dubl .footer_information .footer_information_nav .footer_information_logo, .footer .footer_information .footer_information_nav .footer_information_logo {
   width: 130px;
   height: 52px;
   margin-bottom: 18px;
 }
-.footer_dubl .footer_information .footer_information_nav .footer_information_desc, .footer .footer_information .footer_information_nav .footer_information_desc, .footer_n .footer_information .footer_information_nav .footer_information_desc {
+.footer_dubl .footer_information .footer_information_nav .footer_information_desc, .footer .footer_information .footer_information_nav .footer_information_desc {
   font-weight: 400;
   font-size: 14px;
   line-height: 130%;
   letter-spacing: 0.01em;
-  color: #4f4f4f;
+  color: black;
   margin-bottom: 47px;
 }
-.footer_dubl .footer_information .footer_information_nav .footer_information_nav, .footer .footer_information .footer_information_nav .footer_information_nav, .footer_n .footer_information .footer_information_nav .footer_information_nav {
+.footer_dubl .footer_information .footer_information_nav .footer_information_nav, .footer .footer_information .footer_information_nav .footer_information_nav {
   display: flex;
   align-items: end;
   justify-content: space-between;
 }
-.footer_dubl .footer_information .footer_information_nav .footer_information_nav .footer_nav_item a, .footer .footer_information .footer_information_nav .footer_information_nav .footer_nav_item a, .footer_n .footer_information .footer_information_nav .footer_information_nav .footer_nav_item a {
+.footer_dubl .footer_information .footer_information_nav .footer_information_nav .footer_nav_item a, .footer .footer_information .footer_information_nav .footer_information_nav .footer_nav_item a {
   font-weight: 400;
   font-size: 12px;
   color: black;
   text-decoration: none !important;
 }
-.footer_dubl .footer_information .footer_contact, .footer .footer_information .footer_contact, .footer_n .footer_information .footer_contact {
+.footer_dubl .footer_information .footer_contact, .footer .footer_information .footer_contact {
   justify-self: end;
 }
-.footer_dubl .footer_information .footer_contact .footer_contact_text, .footer .footer_information .footer_contact .footer_contact_text, .footer_n .footer_information .footer_contact .footer_contact_text {
+.footer_dubl .footer_information .footer_contact .footer_contact_text, .footer .footer_information .footer_contact .footer_contact_text {
   font-weight: 300;
   font-size: 12px;
   color: black;
   text-align: start;
   vertical-align: bottom;
 }
-.footer_dubl .footer_information .footer_contact .footer_custom_contact, .footer .footer_information .footer_contact .footer_custom_contact, .footer_n .footer_information .footer_contact .footer_custom_contact {
+.footer_dubl .footer_information .footer_contact .footer_custom_contact, .footer .footer_information .footer_contact .footer_custom_contact {
   display: flex;
   align-items: center;
   justify-content: start;
 }
-.footer_dubl .footer_information .footer_contact .footer_custom_contact img, .footer .footer_information .footer_contact .footer_custom_contact img, .footer_n .footer_information .footer_contact .footer_custom_contact img {
+.footer_dubl .footer_information .footer_contact .footer_custom_contact img, .footer .footer_information .footer_contact .footer_custom_contact img {
   margin: 0 10px;
 }
-.footer_dubl .footer_information .footer_contact .footer_custom_contact .footer_contact_number, .footer .footer_information .footer_contact .footer_custom_contact .footer_contact_number, .footer_n .footer_information .footer_contact .footer_custom_contact .footer_contact_number {
+.footer_dubl .footer_information .footer_contact .footer_custom_contact .footer_contact_number, .footer .footer_information .footer_contact .footer_custom_contact .footer_contact_number {
   font-weight: 400;
   font-size: 14px;
   color: black;
   margin-right: 10px;
 }
-.footer_dubl .footer_information .footer_contact .footer_custom_contact .footer_contact_reqeust, .footer .footer_information .footer_contact .footer_custom_contact .footer_contact_reqeust, .footer_n .footer_information .footer_contact .footer_custom_contact .footer_contact_reqeust {
+.footer_dubl .footer_information .footer_contact .footer_custom_contact .footer_contact_reqeust, .footer .footer_information .footer_contact .footer_custom_contact .footer_contact_reqeust {
   padding: 18px 46px;
   background-color: black;
   margin-right: 18px;
@@ -695,50 +702,50 @@
   border-radius: 10px;
   text-decoration: none !important;
 }
-.footer_dubl .footer_information .footer_contact .footer_contact_addres, .footer .footer_information .footer_contact .footer_contact_addres, .footer_n .footer_information .footer_contact .footer_contact_addres {
+.footer_dubl .footer_information .footer_contact .footer_contact_addres, .footer .footer_information .footer_contact .footer_contact_addres {
   font-weight: 400;
   font-size: 12px;
   color: #000;
   margin-top: 70px;
 }
-.footer_dubl .footer_card_box, .footer .footer_card_box, .footer_n .footer_card_box {
+.footer_dubl .footer_card_box, .footer .footer_card_box {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   border-top: 1px solid white;
   padding: 2% 2% 7% 2%;
 }
-.footer_dubl .footer_card_box .footer_card, .footer .footer_card_box .footer_card, .footer_n .footer_card_box .footer_card {
+.footer_dubl .footer_card_box .footer_card, .footer .footer_card_box .footer_card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid white;
+  border: 1px solid black;
   padding: 2%;
   border-radius: 7px;
   width: 200px;
   height: 100px;
 }
-.footer_dubl .footer_card_box .footer_card .footer_logo_box, .footer .footer_card_box .footer_card .footer_logo_box, .footer_n .footer_card_box .footer_card .footer_logo_box {
+.footer_dubl .footer_card_box .footer_card .footer_logo_box, .footer .footer_card_box .footer_card .footer_logo_box {
   display: flex;
   justify-content: space-between;
 }
-.footer_dubl .footer_card_box .footer_card .footer_logo_box .footer_info_logo, .footer .footer_card_box .footer_card .footer_logo_box .footer_info_logo, .footer_n .footer_card_box .footer_card .footer_logo_box .footer_info_logo {
+.footer_dubl .footer_card_box .footer_card .footer_logo_box .footer_info_logo, .footer .footer_card_box .footer_card .footer_logo_box .footer_info_logo {
   height: 14px;
 }
-.footer_dubl .footer_card_box .footer_card .footer_card_title, .footer .footer_card_box .footer_card .footer_card_title, .footer_n .footer_card_box .footer_card .footer_card_title {
+.footer_dubl .footer_card_box .footer_card .footer_card_title, .footer .footer_card_box .footer_card .footer_card_title {
   text-align: end;
   font-weight: 500;
   font-size: 14px;
   line-height: 130%;
   letter-spacing: 0.06em;
-  color: #4f4f4f;
+  color: black;
 }
-.footer_dubl .footer_card_payment, .footer .footer_card_payment, .footer_n .footer_card_payment {
+.footer_dubl .footer_card_payment, .footer .footer_card_payment {
   display: flex;
   justify-content: space-around;
   gap: 5px;
 }
-.footer_dubl .footer_card_app, .footer .footer_card_app, .footer_n .footer_card_app {
+.footer_dubl .footer_card_app, .footer .footer_card_app {
   display: flex;
   justify-content: start;
   gap: 5px;
@@ -861,7 +868,7 @@
   font-size: 16px;
   line-height: 130%;
   color: #000;
-  margin-bottom: 3px;
+  margin-bottom: 10px;
 }
 .main_for_sale .main_baner_filter .main_baner_filter_sort .form-select {
   width: 40%;
@@ -877,7 +884,7 @@
   font-size: 16px;
   line-height: 130%;
   color: #000;
-  margin-bottom: 3px;
+  margin-bottom: 10px;
 }
 .main_for_sale .main_baner_filter .main_baner_price .main_baner_price_filter {
   display: flex;
@@ -886,4 +893,248 @@
 .main_for_sale .main_baner_filter .main_baner_price .main_baner_price_filter .form-select {
   width: 40%;
   margin-bottom: 40px;
+}
+.main_for_sale .car_logo_title {
+  padding: 0px 5%;
+  margin: 10px 0 0px 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+.main_for_sale .main_baner_check {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
+  gap: 5px;
+}
+.main_for_sale .main_baner_check div {
+  width: 85px;
+  height: 70px;
+  border: 1px solid #f1f0eb;
+}
+.main_for_sale .main_baner_check .car1 {
+  background-image: url(../image/1/1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+}
+.main_for_sale .main_baner_check .car2 {
+  background-image: url(../image/1/2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+}
+.main_for_sale .main_baner_check .car3 {
+  background-image: url(../image/1/3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+}
+.main_for_sale .main_baner_check .car4 {
+  background-image: url(../image/1/4.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+}
+.main_for_sale .main_baner_check .car5 {
+  background-image: url(../image/1/5.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+}
+.main_for_sale .main_baner_check .car6 {
+  background-image: url(../image/1/6.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+}
+.main_for_sale .main_baner_check .car7 {
+  background-image: url(../image/1/7.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+}
+.main_for_sale .main_baner_check .car8 {
+  background-image: url(../image/1/8.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+}
+.main_for_sale .main_baner_check .car9 {
+  background-image: url(../image/1/9.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+}
+.main_for_sale .car_logo {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
+  gap: 5px;
+}
+.main_for_sale .car_logo div {
+  width: 85px;
+  height: 70px;
+  border: 1px solid #f1f0eb;
+}
+.main_for_sale .car_logo .logo1 {
+  background-image: url(../../image/car_logo/1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
+.main_for_sale .car_logo .logo2 {
+  background-image: url(../../image/car_logo/2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
+.main_for_sale .car_logo .logo3 {
+  background-image: url(../../image/car_logo/3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
+.main_for_sale .car_logo .logo4 {
+  background-image: url(../../image/car_logo/4.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
+.main_for_sale .car_logo .logo5 {
+  background-image: url(../../image/car_logo/5.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
+.main_for_sale .car_logo .logo6 {
+  background-image: url(../../image/car_logo/6.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
+.main_for_sale .car_logo .logo7 {
+  background-image: url(../../image/car_logo/7.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
+.main_for_sale .car_logo .logo8 {
+  background-image: url(../../image/car_logo/8.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
+.main_for_sale .car_logo .logo9 {
+  background-image: url(../../image/car_logo/9.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
+.main_for_sale .car_logo .logo10 {
+  background-image: url(../../image/car_logo/10.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
+.main_for_sale .car_logo .logo11 {
+  background-image: url(../../image/car_logo/11.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
+.main_for_sale .car_logo .logo12 {
+  background-image: url(../../image/car_logo/12.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
+.main_for_sale .car_logo .logo13 {
+  background-image: url(../../image/car_logo/13.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
+.main_for_sale .car_logo .logo14 {
+  background-image: url(../../image/car_logo/14.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
+.main_for_sale .car_logo .logo15 {
+  background-image: url(../../image/car_logo/15.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
+.main_for_sale .car_logo .logo16 {
+  background-image: url(../../image/car_logo/16.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
+.main_for_sale .car_logo .logo17 {
+  background-image: url(../../image/car_logo/17.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
+.main_for_sale .car_logo .logo18 {
+  background-image: url(../../image/car_logo/18.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
+.main_for_sale .car_logo .logo19 {
+  background-image: url(../../image/car_logo/19.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
+.main_for_sale .car_logo .logo20 {
+  background-image: url(../../image/car_logo/20.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
+.main_for_sale .car_logo .logo21 {
+  background-image: url(../../image/car_logo/21.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
+.main_for_sale .car_logo .logo22 {
+  background-image: url(../../image/car_logo/22.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
+.main_for_sale .car_logo .logo23 {
+  background-image: url(../../image/car_logo/23.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
+.main_for_sale .car_logo .logo24 {
+  background-image: url(../../image/car_logo/24.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
+.main_for_sale .car_logo .logo25 {
+  background-image: url(../../image/car_logo/25.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
+.main_for_sale .car_logo .logo26 {
+  background-image: url(../../image/car_logo/26.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
+.main_for_sale .car_logo .logo27 {
+  background-image: url(../../image/car_logo/27.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 65%;
 }/*# sourceMappingURL=main.css.map */

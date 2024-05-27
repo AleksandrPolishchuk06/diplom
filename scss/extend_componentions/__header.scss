@@ -13,9 +13,11 @@
         &_nav {
             display: flex;
             align-items: center;
+            margin-bottom: 0;
 
-            .header_custom_item {
+            .header_custom_item:not(:last-child) {
                 margin-right: 20px;
+
             }
 
         }
