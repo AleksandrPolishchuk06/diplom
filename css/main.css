@@ -26,7 +26,7 @@
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 95vh;
+  height: 98vh;
   border-radius: 0 0 30px 30px;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -64,7 +64,7 @@
 }
 .main_page .main_baner .box .main_baner_box .baner_logo_text, .main_page_sale .main_baner .box .main_baner_box .baner_logo_text {
   position: absolute;
-  bottom: 10px;
+  bottom: 5px;
   right: 140px;
   font-weight: 700;
   font-size: 18px;
@@ -72,6 +72,46 @@
   color: black;
 }
 
+@media (max-width: 999px) {
+  .main_page .main_baner, .main_page_sale .main_baner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 50px 20px 0 20px;
+    position: relative;
+  }
+  .main_page .main_baner .main_baner_title, .main_page_sale .main_baner .main_baner_title {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 130%;
+    text-align: center;
+  }
+  .main_page .main_baner .main_baner_desc, .main_page_sale .main_baner .main_baner_desc {
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+  }
+  .main_page .main_baner .box, .main_page_sale .main_baner .box {
+    align-self: center;
+    position: absolute;
+    bottom: -20px;
+  }
+  .main_page .main_baner .box .main_baner_box, .main_page_sale .main_baner .box .main_baner_box {
+    width: 300px;
+    position: relative;
+    transform: translateX(-10%);
+  }
+  .main_page .main_baner .box .main_baner_box .baner_logo_text, .main_page_sale .main_baner .box .main_baner_box .baner_logo_text {
+    position: absolute;
+    bottom: 5px;
+    right: 78px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    color: black;
+  }
+}
 .second_baner {
   width: 100%;
   display: grid;
@@ -153,6 +193,7 @@
   text-transform: uppercase;
   padding: 20px 15vw;
   background-color: #4071cb;
+  text-decoration: none !important;
 }
 .choose_type .choose_type_nav .choose_type_brand {
   border-radius: 0px 10px 10px 0px;
@@ -167,6 +208,7 @@
   color: black;
   letter-spacing: 0.01em;
   text-transform: uppercase;
+  text-decoration: none !important;
 }
 .choose_type .choose_type_body_box {
   padding: 3%;
@@ -214,6 +256,7 @@
   justify-self: center;
   letter-spacing: 0.01em;
   color: #4071cb;
+  text-decoration: none !important;
 }
 
 .hot_deals {
@@ -326,6 +369,7 @@
   line-height: 130%;
   color: black;
   padding: 14px;
+  text-decoration: none !important;
 }
 .buyer_conditions .buyer_conditions_box .buyer_conditions_card_num {
   font-weight: 800;
@@ -417,6 +461,7 @@
     line-height: 130%;
     color: black;
     padding: 14px;
+    text-decoration: none !important;
   }
   .buyer_conditions .buyer_conditions_box .buyer_conditions_card_num {
     font-weight: 800;
@@ -480,7 +525,6 @@
   text-align: center;
 }
 .other_conditions .other_conditions_box .other_conditions_desc {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 130%;

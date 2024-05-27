@@ -65,6 +65,7 @@
                     @include btn_style (8px, 285px, 45px, center, 400, 14px, 130%);
                     color: $black_font_color;
                     padding: 14px;
+                    text-decoration: none !important;
                 }
 
             }
@@ -171,6 +172,7 @@
                         @include btn_style (8px, 285px, 45px, center, 400, 14px, 130%);
                         color: $black_font_color;
                         padding: 14px;
+                        text-decoration: none !important;
                     }
 
                 }

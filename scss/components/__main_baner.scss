@@ -7,7 +7,7 @@
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 95vh;
+    height: 98vh;
     border-radius: 0 0 30px 30px;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -56,12 +56,70 @@
 
                 .baner_logo_text {
                     position: absolute;
-                    bottom: 10px;
+                    bottom: 5px;
                     right: 140px;
                     font-weight: 700;
                     font-size: 18px;
                     line-height: 130%;
                     color: $black_font_color;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:999px) {
+
+    .main_page {
+
+        .main_baner {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100vw;
+            padding: 50px 20px 0 20px;
+            position: relative;
+
+
+            .main_baner_title {
+                font-weight: 800;
+                font-size: 40px;
+                line-height: 130%;
+                text-align: center;
+
+            }
+
+            .main_baner_desc {
+                font-weight: 500;
+                font-size: 40px;
+                text-align: center;
+
+            }
+
+            .box {
+                align-self: center;
+                position: absolute;
+                bottom: -20px;
+
+
+
+                .main_baner_box {
+                    width: 300px;
+                    position: relative;
+                    transform: translateX(-10%);
+
+
+
+
+                    .baner_logo_text {
+                        position: absolute;
+                        bottom: 5px;
+                        right: 78px;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 130%;
+                        color: $black_font_color;
+                    }
                 }
             }
         }
