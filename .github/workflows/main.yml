@@ -1,22 +1,19 @@
-name: "Deploy to host"
-
-on: 
-   push:
-       branches:
-       - main
+on: push
+name: 🚀 Deploy website on push
 jobs:
-   deploy:
-      runs-on: ubuntu-latest
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v4
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: ftpupload.net
+        username: if0_36632234
+        password: T91faDKqA9vGI 
 
-      steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Upload to FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         
-        with:
-         ftp_server: ftpupload.net
-         ftp_username: if0_36632234
-         ftp_password: T91faDKqA9vGI 
-         local-dir: "/"
       
