@@ -119,17 +119,18 @@
         .header_custom {
             display: none;
         }
-    }
 
-    .navbar-brand {
-        margin-right: 1vw !important;
-    }
 
-    .navbar {
-        width: 100vw;
-        padding-top: 0px !important;
-        justify-content: center;
-        padding-bottom: 0 !important;
-        margin-right: 5vw;
+        .navbar-brand {
+            margin-right: 1vw !important;
+        }
+
+        .navbar {
+            width: 100vw;
+            padding-top: 0px !important;
+            justify-content: center;
+            padding-bottom: 0 !important;
+            margin-right: 5vw;
+        }
     }
 }
