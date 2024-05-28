@@ -5,17 +5,17 @@ on:
        branches:
        - main
 jobs:
-    deploy:
-    runs-on: ubuntu-latest
+   deploy:
+      runs-on: ubuntu-latest
 
-    steps:
-    -name: Checkout code
-      uses:actions/checkout@v2
-    -name: Upload to FTP
-      uses: SamKirkLand/FTP-Deploy_Action@4.1.0
-      with:
-      ftp_server:ftpupload.net
-      ftp_username:if0_36632234
-      ftp_password:T91faDKqA9vGI 
-      local-dir: "/"
+      steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Upload to FTP
+        uses: SamKirkLand/FTP-Deploy_Action@4.1.0
+        with:
+         ftp_server: ftpupload.net
+         ftp_username: if0_36632234
+         ftp_password: T91faDKqA9vGI 
+         local-dir: "/"
       
