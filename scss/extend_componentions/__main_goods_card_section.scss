@@ -70,7 +70,6 @@
             }
 
             .car_baner_box {
-
                 width: 100%;
                 height: fit-content;
 
@@ -191,8 +190,9 @@
 @media (max-width:998px) {
     .main_goods_card {
         display: grid;
-        width: 100%;
-        justify-self: center;
+        width: 100vw;
+        overflow-x: hidden;
+
         text-decoration: none !important;
 
 
@@ -240,6 +240,125 @@
                         .box_item_symbol {
                             width: 22px;
                         }
+                    }
+                }
+
+                .card_car_char_list {
+                    border-radius: 0px;
+                    width: 100%;
+
+                    .char_list_btn {
+                        border: 1px solid #4f4f4f;
+                        border-radius: 8px;
+                        padding: 4% 20%;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 130%;
+                        letter-spacing: 0.17em;
+                        color: #4f4f4f;
+                        text-align: center;
+                        text-decoration: none !important;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width:607px) {
+    .main_goods_card {
+        display: grid;
+        width: 100vw;
+        justify-self: center;
+        text-decoration: none !important;
+        padding: 0;
+        margin: 0 auto;
+        overflow-x: hidden;
+
+
+        .r-30 {
+            border-radius: 0px;
+        }
+
+        .carousel-control-prev {
+            top: 80%;
+            left: 65%;
+            width: 50px;
+            height: 30px;
+            background: $border_color_gray;
+            opacity: 0.5;
+
+        }
+
+        .carousel-control-next {
+            top: 80%;
+            right: 5%;
+            width: 50px;
+            height: 30px;
+            background: $border_color_gray;
+            opacity: 0.5;
+        }
+
+
+        .goods_card {
+            .goods_card_nav {
+                font-size: 12px;
+                margin: 10px 0 10px 5px;
+                padding: 0;
+
+                .goods_card_nav_link {
+                    margin-right: 10px;
+                    color: black;
+                    text-decoration: none;
+                }
+
+                &_item::before {
+                    content: url(../image/second_page/•.svg);
+                }
+
+            }
+
+            .goods_card_title {
+                font-size: 22px;
+            }
+
+
+
+            .goods_card_box {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 0 10px;
+
+                .car_baner_box {
+                    width: 100%;
+                    height: fit-content;
+
+                    .car_box_description {
+                        background: #fff;
+                        padding: 0;
+
+                        .car_box_title {
+                            display: none;
+                        }
+
+                        .car_box_text {
+                            display: none;
+                        }
+                    }
+
+                    .car_box_characteristic {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 0px 0px 30px 30px;
+
+                        .car_box_item {
+                            display: none;
+                        }
+
                     }
                 }
 
