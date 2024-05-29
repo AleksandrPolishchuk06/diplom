@@ -8,23 +8,27 @@
   text-decoration: none;
 }
 
-.other_conditions .accordion {
+.other_conditions .accordion,
+.acordeon_filter_for_sale .accordion {
   width: 100vw;
 }
-.other_conditions .accordion-item {
+.other_conditions .accordion-item,
+.acordeon_filter_for_sale .accordion-item {
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   background-color: rgba(255, 255, 255, 0.01);
   border: 1px solid #4f4f4f;
 }
-.other_conditions .accordion-button:not(.collapsed) {
+.other_conditions .accordion-button:not(.collapsed),
+.acordeon_filter_for_sale .accordion-button:not(.collapsed) {
   color: white;
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   background-color: rgba(87, 83, 83, 0.01);
   box-shadow: none;
 }
-.other_conditions .accordion-button {
+.other_conditions .accordion-button,
+.acordeon_filter_for_sale .accordion-button {
   position: relative;
   display: flex;
   align-items: center;
@@ -38,7 +42,8 @@
   background-color: rgba(81, 80, 75, 0.1);
   border: 0;
 }
-.other_conditions .accordion-body {
+.other_conditions .accordion-body,
+.acordeon_filter_for_sale .accordion-body {
   color: white;
   text-align: left;
 }
@@ -1527,16 +1532,19 @@
   display: grid;
   width: 100%;
   align-self: center;
-  grid-template-columns: minmax(300px, 20%) auto;
+  grid-template-columns: minmax(290px, 20%) auto;
 }
-.main_for_sale .main_baner_filter {
+.main_for_sale .acordeon_filter_for_sale {
+  display: none;
+}
+.main_for_sale .filter_destop .main_baner_filter {
   background-color: white;
 }
-.main_for_sale .main_baner_filter .main_baner_filter_sort {
+.main_for_sale .filter_destop .main_baner_filter .main_baner_filter_sort {
   padding: 4%;
   border-bottom: 1px solid #f1f0eb;
 }
-.main_for_sale .main_baner_filter .main_baner_filter_sort .main_baner_sort_title {
+.main_for_sale .filter_destop .main_baner_filter .main_baner_filter_sort .main_baner_sort_title {
   margin-top: 40px;
   font-weight: 600;
   font-size: 16px;
@@ -1544,15 +1552,15 @@
   color: #000;
   margin-bottom: 10px;
 }
-.main_for_sale .main_baner_filter .main_baner_filter_sort .form-select {
+.main_for_sale .filter_destop .main_baner_filter .main_baner_filter_sort .form-select {
   width: 40%;
   margin-bottom: 30px;
 }
-.main_for_sale .main_baner_filter .main_baner_price {
+.main_for_sale .filter_destop .main_baner_filter .main_baner_price {
   padding: 5%;
   border-bottom: 1px solid #f1f0eb;
 }
-.main_for_sale .main_baner_filter .main_baner_price .price_filter_title {
+.main_for_sale .filter_destop .main_baner_filter .main_baner_price .price_filter_title {
   margin-top: 40px;
   font-weight: 600;
   font-size: 16px;
@@ -1560,259 +1568,321 @@
   color: #000;
   margin-bottom: 10px;
 }
-.main_for_sale .main_baner_filter .main_baner_price .main_baner_price_filter {
+.main_for_sale .filter_destop .main_baner_filter .main_baner_price .main_baner_price_filter {
   display: flex;
   gap: 15%;
 }
-.main_for_sale .main_baner_filter .main_baner_price .main_baner_price_filter .form-select {
+.main_for_sale .filter_destop .main_baner_filter .main_baner_price .main_baner_price_filter .form-select {
   width: 40%;
   margin-bottom: 40px;
 }
-.main_for_sale .car_logo_title {
+.main_for_sale .filter_destop .car_logo_title {
   padding: 0px 5%;
   margin: 10px 0 0px 0;
   font-size: 16px;
   font-weight: 700;
 }
-.main_for_sale .main_baner_check {
+.main_for_sale .filter_destop .main_baner_check {
   display: flex;
   flex-wrap: wrap;
   padding: 5%;
   gap: 5px;
 }
-.main_for_sale .main_baner_check div {
+.main_for_sale .filter_destop .main_baner_check div {
   width: 85px;
   height: 70px;
   border: 1px solid #f1f0eb;
 }
-.main_for_sale .main_baner_check .car1 {
+.main_for_sale .filter_destop .main_baner_check .car1 {
   background-image: url(../image/1/1.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 90%;
 }
-.main_for_sale .main_baner_check .car2 {
+.main_for_sale .filter_destop .main_baner_check .car2 {
   background-image: url(../image/1/2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 90%;
 }
-.main_for_sale .main_baner_check .car3 {
+.main_for_sale .filter_destop .main_baner_check .car3 {
   background-image: url(../image/1/3.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 90%;
 }
-.main_for_sale .main_baner_check .car4 {
+.main_for_sale .filter_destop .main_baner_check .car4 {
   background-image: url(../image/1/4.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 90%;
 }
-.main_for_sale .main_baner_check .car5 {
+.main_for_sale .filter_destop .main_baner_check .car5 {
   background-image: url(../image/1/5.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 90%;
 }
-.main_for_sale .main_baner_check .car6 {
+.main_for_sale .filter_destop .main_baner_check .car6 {
   background-image: url(../image/1/6.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 90%;
 }
-.main_for_sale .main_baner_check .car7 {
+.main_for_sale .filter_destop .main_baner_check .car7 {
   background-image: url(../image/1/7.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 90%;
 }
-.main_for_sale .main_baner_check .car8 {
+.main_for_sale .filter_destop .main_baner_check .car8 {
   background-image: url(../image/1/8.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 90%;
 }
-.main_for_sale .main_baner_check .car9 {
+.main_for_sale .filter_destop .main_baner_check .car9 {
   background-image: url(../image/1/9.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 90%;
 }
-.main_for_sale .car_logo {
+.main_for_sale .filter_destop .car_logo {
   display: flex;
   flex-wrap: wrap;
   padding: 5%;
   gap: 5px;
 }
-.main_for_sale .car_logo div {
+.main_for_sale .filter_destop .car_logo div {
   width: 85px;
   height: 70px;
   border: 1px solid #f1f0eb;
 }
-.main_for_sale .car_logo .logo1 {
+.main_for_sale .filter_destop .car_logo .logo1 {
   background-image: url(../image/car_logo/1.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 65%;
 }
-.main_for_sale .car_logo .logo2 {
+.main_for_sale .filter_destop .car_logo .logo2 {
   background-image: url(../image/car_logo/2.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 65%;
 }
-.main_for_sale .car_logo .logo3 {
+.main_for_sale .filter_destop .car_logo .logo3 {
   background-image: url(../image/car_logo/3.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 65%;
 }
-.main_for_sale .car_logo .logo4 {
+.main_for_sale .filter_destop .car_logo .logo4 {
   background-image: url(../image/car_logo/4.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 65%;
 }
-.main_for_sale .car_logo .logo5 {
+.main_for_sale .filter_destop .car_logo .logo5 {
   background-image: url(../image/car_logo/5.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 65%;
 }
-.main_for_sale .car_logo .logo6 {
+.main_for_sale .filter_destop .car_logo .logo6 {
   background-image: url(../image/car_logo/6.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 65%;
 }
-.main_for_sale .car_logo .logo7 {
+.main_for_sale .filter_destop .car_logo .logo7 {
   background-image: url(../image/car_logo/7.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 65%;
 }
-.main_for_sale .car_logo .logo8 {
+.main_for_sale .filter_destop .car_logo .logo8 {
   background-image: url(../image/car_logo/8.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 65%;
 }
-.main_for_sale .car_logo .logo9 {
+.main_for_sale .filter_destop .car_logo .logo9 {
   background-image: url(../image/car_logo/9.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 65%;
 }
-.main_for_sale .car_logo .logo10 {
+.main_for_sale .filter_destop .car_logo .logo10 {
   background-image: url(../image/car_logo/10.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 65%;
 }
-.main_for_sale .car_logo .logo11 {
+.main_for_sale .filter_destop .car_logo .logo11 {
   background-image: url(../image/car_logo/11.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 65%;
 }
-.main_for_sale .car_logo .logo12 {
+.main_for_sale .filter_destop .car_logo .logo12 {
   background-image: url(../image/car_logo/12.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 65%;
 }
-.main_for_sale .car_logo .logo13 {
+.main_for_sale .filter_destop .car_logo .logo13 {
   background-image: url(../image/car_logo/13.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 65%;
 }
-.main_for_sale .car_logo .logo14 {
+.main_for_sale .filter_destop .car_logo .logo14 {
   background-image: url(../image/car_logo/14.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 65%;
 }
-.main_for_sale .car_logo .logo15 {
+.main_for_sale .filter_destop .car_logo .logo15 {
   background-image: url(../image/car_logo/15.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 65%;
 }
-.main_for_sale .car_logo .logo16 {
+.main_for_sale .filter_destop .car_logo .logo16 {
   background-image: url(../image/car_logo/16.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 65%;
 }
-.main_for_sale .car_logo .logo17 {
+.main_for_sale .filter_destop .car_logo .logo17 {
   background-image: url(../image/car_logo/17.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 65%;
 }
-.main_for_sale .car_logo .logo18 {
+.main_for_sale .filter_destop .car_logo .logo18 {
   background-image: url(../image/car_logo/18.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 65%;
 }
-.main_for_sale .car_logo .logo19 {
+.main_for_sale .filter_destop .car_logo .logo19 {
   background-image: url(../image/car_logo/19.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 65%;
 }
-.main_for_sale .car_logo .logo20 {
+.main_for_sale .filter_destop .car_logo .logo20 {
   background-image: url(../image/car_logo/20.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 65%;
 }
-.main_for_sale .car_logo .logo21 {
+.main_for_sale .filter_destop .car_logo .logo21 {
   background-image: url(../image/car_logo/21.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 65%;
 }
-.main_for_sale .car_logo .logo22 {
+.main_for_sale .filter_destop .car_logo .logo22 {
   background-image: url(../image/car_logo/22.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 65%;
 }
-.main_for_sale .car_logo .logo23 {
+.main_for_sale .filter_destop .car_logo .logo23 {
   background-image: url(../image/car_logo/23.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 65%;
 }
-.main_for_sale .car_logo .logo24 {
+.main_for_sale .filter_destop .car_logo .logo24 {
   background-image: url(../image/car_logo/24.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 65%;
 }
-.main_for_sale .car_logo .logo25 {
+.main_for_sale .filter_destop .car_logo .logo25 {
   background-image: url(../image/car_logo/25.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 65%;
 }
-.main_for_sale .car_logo .logo26 {
+.main_for_sale .filter_destop .car_logo .logo26 {
   background-image: url(../image/car_logo/26.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 65%;
 }
-.main_for_sale .car_logo .logo27 {
+.main_for_sale .filter_destop .car_logo .logo27 {
   background-image: url(../image/car_logo/27.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 65%;
 }
 
+@media (max-width: 607px) {
+  .main_page_sale {
+    max-height: 250px;
+  }
+  .main_for_sale {
+    display: grid;
+    width: 100%;
+    align-self: center;
+    grid-template-columns: 1fr;
+  }
+  .main_for_sale .filter_destop {
+    display: none;
+  }
+  .main_for_sale .acordeon_filter_for_sale {
+    display: contents;
+  }
+  .main_for_sale .acordeon_filter_for_sale .main_baner_filter_sort {
+    padding: 4%;
+    border-bottom: 1px solid #f1f0eb;
+  }
+  .main_for_sale .acordeon_filter_for_sale .main_baner_filter_sort .main_baner_sort_title {
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  .main_for_sale .acordeon_filter_for_sale .main_baner_filter_sort .form-select {
+    width: 40%;
+    margin-bottom: 30px;
+  }
+  .main_for_sale .acordeon_filter_for_sale .main_baner_price {
+    padding: 5%;
+    border-bottom: 1px solid #f1f0eb;
+  }
+  .main_for_sale .acordeon_filter_for_sale .main_baner_price .price_filter_title {
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  .main_for_sale .acordeon_filter_for_sale .main_baner_price .main_baner_price_filter {
+    display: flex;
+    gap: 15%;
+  }
+  .main_for_sale .acordeon_filter_for_sale .main_baner_price .main_baner_price_filter .form-select {
+    width: 40%;
+    margin-bottom: 40px;
+  }
+  .main_for_sale .car_logo_title {
+    display: none;
+  }
+  .main_for_sale .main_baner_check {
+    display: none;
+  }
+  .main_for_sale .car_logo {
+    display: none;
+  }
+}
 .main {
   width: 100%;
   height: 100%;
