@@ -1,0 +1,41 @@
+//style for Acordeon in other condidion section
+.other_conditions {
+    .accordion {
+        width: 100vw;
+    }
+
+    .accordion-item {
+
+        backdrop-filter: blur(4px);
+        background-color: rgba(255, 255, 255, 0.01);
+        border: 1px solid $border_color_gray;
+    }
+
+    .accordion-button:not(.collapsed) {
+        color: $border_white_color;
+        backdrop-filter: blur(4px);
+        background-color: rgba(87, 83, 83, 0.01);
+        box-shadow: none;
+    }
+
+    .accordion-button {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 1rem 1.25rem;
+        font-size: 1rem;
+        color: $border_white_color;
+        text-align: center;
+        backdrop-filter: blur(4px);
+        background-color: rgba(81, 80, 75, 0.1);
+        border: 0;
+    }
+
+    .accordion-body {
+        color: $border_white_color;
+        text-align: left;
+    }
+}
+
+// the end for acordeon styles

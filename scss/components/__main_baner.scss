@@ -31,7 +31,7 @@
             font-weight: 800;
             font-size: 49px;
             line-height: 130%;
-            color: rgb(217, 10, 134);
+            color: rgb(218, 25, 205);
             letter-spacing: 0.05em;
         }
 
@@ -71,29 +71,23 @@
 @media (max-width:999px) {
 
     .main_page {
+        height: 98vh;
+        width: 100vw;
+
 
         .main_baner {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 100vw;
-            padding: 50px 20px 0 20px;
-            position: relative;
 
+            padding: 50px 10px 0 10px;
 
             .main_baner_title {
-                font-weight: 800;
                 font-size: 40px;
-                line-height: 130%;
                 text-align: center;
-
+                z-index: -1;
             }
 
             .main_baner_desc {
-                font-weight: 500;
                 font-size: 40px;
                 text-align: center;
-
             }
 
             .box {
@@ -101,24 +95,54 @@
                 position: absolute;
                 bottom: -20px;
 
+                .main_baner_box {
+                    width: 300px;
+                    transform: translateX(-10%);
 
+                    .baner_logo_text {
+
+                        right: 67px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:606px) {
+
+
+    .main_page {
+        height: 98vh;
+
+
+        .main_baner {
+
+            padding: 50px 20px 0 20px;
+
+            .main_baner_title {
+                font-size: 40px;
+                text-align: center;
+                z-index: -1;
+            }
+
+            .main_baner_desc {
+                font-size: 40px;
+                text-align: center;
+            }
+
+            .box {
+                align-self: center;
+                position: absolute;
+                bottom: -20px;
 
                 .main_baner_box {
                     width: 300px;
-                    position: relative;
                     transform: translateX(-10%);
 
-
-
-
                     .baner_logo_text {
-                        position: absolute;
-                        bottom: 5px;
-                        right: 78px;
-                        font-weight: 700;
-                        font-size: 18px;
-                        line-height: 130%;
-                        color: $black_font_color;
+
+                        right: 67px;
                     }
                 }
             }

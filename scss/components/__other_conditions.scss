@@ -58,17 +58,19 @@
             }
         }
     }
-
-
 }
 
 @media (max-width:999px) {
-    .other_conditions_destop {
-        display: none !important;
-    }
+    .other_conditions {
+        width: 100%;
 
-    .other_conditions_mobile {
-        display: block !important;
-    }
+        .other_conditions_destop {
+            display: none !important;
+        }
 
+        .other_conditions_mobile {
+            display: block !important;
+
+        }
+    }
 }

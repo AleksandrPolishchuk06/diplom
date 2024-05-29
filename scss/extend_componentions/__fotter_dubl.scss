@@ -148,87 +148,140 @@
 
 @media (max-width:998px) {
     .footer_dubl {
-        display: none;
-        // .footer_information {
-        //     display: grid;
-        //     grid-template-rows: 1fr 1fr;
-        //     grid-template-columns: 1fr;
-        //     gap: 5%;
+
+        .footer_information {
+            display: grid;
+            grid-template-rows: 100px auto;
+            grid-template-columns: 1fr;
+            gap: 5%;
 
 
-        //     .footer_information_nav {
-        //         .footer_information_logo {
-        //             width: 130px;
-        //             height: 52px;
-        //             margin-bottom: 18px;
-        //         }
+            .footer_information_nav {
+                .footer_information_logo {
+                    margin-bottom: 5px;
+                }
 
-        //         .footer_information_desc {
-        //             font-weight: 400;
-        //             font-size: 14px;
-        //             line-height: 130%;
-        //             letter-spacing: 0.01em;
-        //             color: $black_font_color;
+                .footer_information_desc {
+                    margin-bottom: 10px;
+                }
 
-        //             margin-bottom: 20px;
-        //         }
+                .footer_information_nav {
+                    display: none;
+                }
+            }
 
-        //         .footer_information_nav {
-        //             display: none;
-        //         }
-        //     }
+            .footer_contact {
+                justify-self: start;
 
-        //     .footer_contact {
-        //         justify-self: start;
+                .footer_contact_text {
+                    font-size: 14px;
+                }
 
-        //         .footer_contact_text {
+                .footer_custom_contact {
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
 
-        //             font-weight: 300;
-        //             font-size: 12px;
-        //             color: $black_font_color;
-        //             text-align: start;
-        //             vertical-align: bottom;
-        //         }
+                    .footer_contact_number {
+                        margin: 0;
+                    }
 
-        //         .footer_custom_contact {
-        //             display: flex;
-        //             align-items: center;
-        //             justify-content: start;
+                    .footer_contact_reqeust {
+                        padding: 18px 46px;
+                        background-color: $black_font_color;
+                        margin-right: 18px;
+                        color: $main_font_color !important;
+                        text-align: center;
+                        margin: 0 10px;
+                        border-radius: 10px;
+                        text-decoration: none !important;
+                    }
+                }
 
-        //             img {
-        //                 margin: 0 10px;
-        //             }
+                .footer_contact_addres {
+                    font-weight: 400;
+                    font-size: 12px;
+                    color: #000;
+                    margin-top: 5px;
+                }
+            }
+        }
 
-        //             .footer_contact_number {
-        //                 font-weight: 400;
-        //                 font-size: 14px;
-        //                 color: $black_font_color;
-        //                 margin-right: 10px;
-        //             }
+        .footer_card_box {
+            display: none;
+        }
+    }
+}
 
-        //             .footer_contact_reqeust {
-        //                 padding: 18px 46px;
-        //                 background-color: $black_font_color;
-        //                 margin-right: 18px;
-        //                 color: $main_font_color !important;
-        //                 text-align: center;
-        //                 margin: 0 10px;
-        //                 border-radius: 10px;
-        //                 text-decoration: none !important;
-        //             }
-        //         }
+@media (max-width:606px) {
+    .footer_dubl {
+        padding: 0;
 
-        //         .footer_contact_addres {
-        //             font-weight: 400;
-        //             font-size: 12px;
-        //             color: #000;
-        //             margin-top: 5px;
-        //         }
-        //     }
-        // }
+        .footer_information {
+            display: grid;
+            grid-template-rows: 80px auto;
+            grid-template-columns: 1fr;
+            gap: 0;
 
-        // .footer_card_box {
-        //     display: none;
-        // }
+
+            .footer_information_nav {
+                .footer_information_logo {
+                    margin-bottom: 5px;
+                }
+
+                .footer_information_desc {
+                    display: none;
+                }
+
+                .footer_information_nav {
+                    display: none;
+                }
+            }
+
+            .footer_contact {
+                justify-self: start;
+
+                .footer_contact_text {
+                    font-size: 12px;
+                }
+
+                .footer_custom_contact {
+                    display: flex;
+
+                    align-items: center;
+                    justify-content: start;
+
+
+
+                    .footer_contact_number {
+                        display: none;
+                    }
+
+                    .footer_contact_reqeust {
+                        padding: 7px;
+                        background-color: $black_font_color;
+                        margin-right: 5px;
+                        color: $main_font_color !important;
+                        text-align: center;
+                        margin-left: 3vw;
+                        border-radius: 10px;
+                        text-decoration: none !important;
+                    }
+                }
+
+                .footer_contact_addres {
+                    margin-top: 20px;
+                    font-weight: 400;
+                    font-size: 12px;
+                    color: #000;
+                    margin-top: 5px;
+                    text-align: start;
+                }
+            }
+        }
+
+        .footer_card_box {
+            display: none;
+        }
     }
 }

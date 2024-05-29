@@ -109,3 +109,117 @@
     }
 
 }
+
+@media (max-width:606px) {
+
+    .hot_deals_card_draft {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2vw;
+        border-radius: 10px;
+        width: 90%;
+        height: 390px;
+        margin-bottom: 10px;
+
+        .hot_deals_card_title {
+            margin-top: 5px;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .hot_deals_card_year {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 130%;
+            letter-spacing: 0.12em;
+            color: #000;
+            margin-bottom: 0px;
+        }
+
+        .hot_deals_card_brand {
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 130%;
+            letter-spacing: 0.12em;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 140px;
+        }
+
+        .hot_deals_img {
+            justify-content: center;
+            position: absolute;
+            width: 70vw;
+            top: 90px;
+            left: 15vw;
+
+        }
+
+
+        .hot_deals_char {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            padding: 0;
+
+
+            &_item1::before {
+                content: url(../image/hot_deals/engine.svg);
+                vertical-align: middle;
+                margin-right: 4px;
+            }
+
+            &_item2::before {
+                content: url(../image/hot_deals/trans.svg);
+                vertical-align: middle;
+                margin-right: 4px;
+            }
+
+            &_item3::before {
+                content: url(../image/hot_deals/car.svg);
+                vertical-align: middle;
+                margin-right: 4px;
+            }
+
+
+        }
+
+        .hot_deals_btn {
+            margin: auto;
+            padding: 14px 73px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 130%;
+            letter-spacing: 0.17em;
+            color: #000;
+            border: 1px solid #000;
+            border-radius: 8px;
+            height: 45px;
+            justify-content: center;
+            text-decoration: none;
+
+        }
+
+        .hot_deals_condition {
+            display: flex;
+            position: absolute;
+            top: 45px;
+            right: 10px;
+
+            .hot_deals_cond_title {
+
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 130%;
+                letter-spacing: 0.12em;
+                color: #4071cb;
+                margin-left: 4px;
+                margin-bottom: 0;
+
+            }
+
+        }
+
+    }
+}

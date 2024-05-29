@@ -38,3 +38,25 @@
     }
 
 }
+
+@media (min-width:607px) and (max-width:998px) {
+    .hot_deals {
+        display: grid;
+        margin-top: 50px;
+        padding: 0;
+
+
+
+    }
+}
+
+@media (max-width:606px) {
+    .hot_deals {
+        display: grid;
+        margin-top: 50px;
+        padding: 0;
+
+
+
+    }
+}
