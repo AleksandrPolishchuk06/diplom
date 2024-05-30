@@ -58,7 +58,7 @@
         .buyer_conditions_card_num {
             @include font_style(800, 32px, 0.01em, $black_font_color);
             line-height: 130%;
-            margin-bottom: 60px;
+            margin-bottom: 30px;
         }
 
         .buyer_conditions_card_title {
@@ -75,7 +75,7 @@
     }
 }
 
-@media (max-width: 998px) {
+@media (max-width: 607px) {
     .buyer_conditions {
         display: grid;
         width: 100%;
