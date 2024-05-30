@@ -98,15 +98,12 @@
   opacity: 0.5;
 }
 
-.form_valid {
+.form_register .form_valid, .form_register_footer .form_valid {
   display: flex;
   flex-direction: column;
   align-items: end;
 }
-.form_valid input {
-  width: 100%;
-}
-.form_valid .input_btn {
+.form_register .form_valid .input_btn, .form_register_footer .form_valid .input_btn {
   cursor: pointer;
   border: 1px solid black;
   border-radius: 10px;
@@ -116,47 +113,7 @@
   background-color: rgba(255, 255, 255, 0.01);
   padding: 10px 25px;
 }
-.form_valid input {
-  width: 100% !important;
-  outline: none;
-  margin: 10px 0;
-  border: 1px solid black !important;
-  border-radius: 10px;
-  height: 50px;
-  padding-left: 5px;
-}
-.form_valid input:-moz-placeholder-shown {
-  color: black;
-}
-.form_valid input:placeholder-shown {
-  color: black;
-}
-.form_valid input:focus {
-  box-shadow: 0 10px 10px -10px, 0 10px 10px -10px black;
-}
-.form_valid input:focus:valid {
-  border: 1.5px solid green;
-}
-.form_valid input:focus:invalid {
-  border: 1.5px solid #E30A17;
-}
-
-.form_register .form_valid, .form_register_header .form_valid, .header_white .header_custom_contact .form_register_header .form_valid, .header .header_custom_contact .form_register_header .form_valid, .form_register_footer .form_valid {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-}
-.form_register .form_valid .input_btn, .form_register_header .form_valid .input_btn, .form_register_footer .form_valid .input_btn {
-  cursor: pointer;
-  border: 1px solid black;
-  border-radius: 10px;
-  color: white;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
-  background-color: rgba(255, 255, 255, 0.01);
-  padding: 10px 25px;
-}
-.form_register .form_valid input, .form_register_header .form_valid input, .header_white .header_custom_contact .form_register_header .form_valid input, .header .header_custom_contact .form_register_header .form_valid input, .form_register_footer .form_valid input {
+.form_register .form_valid input, .form_register_footer .form_valid input {
   width: 100%;
   outline: none;
   margin: 10px 0;
@@ -164,24 +121,24 @@
   border-radius: 10px;
   padding: 20px 0px 20px 25px;
 }
-.form_register .form_valid input:focus, .form_register_header .form_valid input:focus, .form_register_footer .form_valid input:focus {
+.form_register .form_valid input:focus, .form_register_footer .form_valid input:focus {
   box-shadow: 0 10px 10px -10px, 0 10px 10px -10px black;
 }
-.form_register .form_valid input:focus:valid, .form_register_header .form_valid input:focus:valid, .form_register_footer .form_valid input:focus:valid {
+.form_register .form_valid input:focus:valid, .form_register_footer .form_valid input:focus:valid {
   border: 1.5px solid green;
 }
-.form_register .form_valid input:focus:invalid, .form_register_header .form_valid input:focus:invalid, .form_register_footer .form_valid input:focus:invalid {
+.form_register .form_valid input:focus:invalid, .form_register_footer .form_valid input:focus:invalid {
   border: 1.5px solid #E30A17;
 }
-.form_register .modal-title, .form_register_header .modal-title, .header_white .header_custom_contact .form_register_header .modal-title, .header .header_custom_contact .form_register_header .modal-title, .form_register_footer .modal-title {
+.form_register .modal-title, .form_register_footer .modal-title {
   color: white;
 }
-.form_register .btn, .form_register_header .btn, .header_white .header_custom_contact .form_register_header .btn, .header .header_custom_contact .form_register_header .btn, .form_register_footer .btn {
+.form_register .btn, .form_register_footer .btn {
   color: black !important;
   background-color: transparent;
   border: 1px solid transparent;
 }
-.form_register .btn-primary, .form_register_header .btn-primary, .header_white .header_custom_contact .form_register_header .btn-primary, .header .header_custom_contact .form_register_header .btn-primary, .form_register_footer .btn-primary {
+.form_register .btn-primary, .form_register_footer .btn-primary {
   color: black !important;
   -webkit-backdrop-filter: blur(6px) !important;
           backdrop-filter: blur(6px) !important;
@@ -190,7 +147,7 @@
   border: 1px solid #4f4f4f !important;
   padding: 10px 30px !important;
 }
-.form_register .modal-content, .form_register_header .modal-content, .header_white .header_custom_contact .form_register_header .modal-content, .header .header_custom_contact .form_register_header .modal-content, .form_register_footer .modal-content {
+.form_register .modal-content, .form_register_footer .modal-content {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -208,17 +165,6 @@
 .form_register_footer .btn-primary {
   color: white !important;
   padding: 10px 5vw !important;
-}
-
-.form_register_header .btn, .header_white .header_custom_contact .form_register_header .btn, .header .header_custom_contact .form_register_header .btn {
-  color: white !important;
-  background-color: black !important;
-}
-.form_register_header .btn-primary, .header_white .header_custom_contact .form_register_header .btn-primary, .header .header_custom_contact .form_register_header .btn-primary {
-  color: white !important;
-  padding: 15px 60px !important;
-  border: none !important;
-  margin: 0 5px;
 }
 
 .body_main {
@@ -856,7 +802,9 @@
   margin-right: 20px;
   margin-bottom: 0 !important;
   text-decoration: none;
-  color: black !important;
+  color: white !important;
+  background-color: black;
+  padding: 15px 40px;
 }
 .header .header_custom_contact .header_logo_whatsap {
   width: 25px;
@@ -919,20 +867,7 @@
     height: -moz-fit-content;
     height: fit-content;
   }
-  .header .header_custom_nav {
-    display: none;
-  }
-  .header .header_custom_contact .custom_contact_number {
-    display: none;
-  }
-  .header .header_custom_contact .form_register_header {
-    display: block;
-    position: absolute;
-  }
-  .header .header_custom_contact .header_logo_whatsap {
-    display: none;
-  }
-  .header .header_custom_contact .header_logo_telegram {
+  .header .header_custom {
     display: none;
   }
   .header .header_page .container-fluid {
@@ -1254,7 +1189,7 @@
 }
 .footer_dubl .footer_information, .footer .footer_information {
   display: grid;
-  grid-template-columns: 20% 70%;
+  grid-template-columns: 30% 60%;
   gap: 5%;
   padding: 3%;
 }
@@ -1304,7 +1239,7 @@
   font-weight: 400;
   font-size: 14px;
   color: black;
-  margin-right: 10px;
+  margin: 0;
 }
 .footer_dubl .footer_information .footer_contact .footer_contact_addres, .footer .footer_information .footer_contact .footer_contact_addres {
   font-weight: 400;
@@ -1314,7 +1249,7 @@
 }
 .footer_dubl .footer_card_box, .footer .footer_card_box {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   border-top: 1px solid white;
   padding: 2% 2% 7% 2%;
@@ -1326,7 +1261,7 @@
   border: 1px solid black;
   padding: 2%;
   border-radius: 7px;
-  width: 200px;
+  width: 15vw;
   height: 100px;
 }
 .footer_dubl .footer_card_box .footer_card .footer_logo_box, .footer .footer_card_box .footer_card .footer_logo_box {
@@ -2159,6 +2094,8 @@
   margin-bottom: 0 !important;
   text-decoration: none;
   color: white !important;
+  background-color: black;
+  padding: 15px 40px;
 }
 .header_white .header_custom_contact .header_logo_whatsap, .main_page .header .header_custom_contact .header_logo_whatsap, .main_page_sale .header .header_custom_contact .header_logo_whatsap {
   width: 25px;
@@ -2221,21 +2158,7 @@
     height: -moz-fit-content;
     height: fit-content;
   }
-  .header_white .header_custom_nav, .main_page .header .header_custom_nav, .main_page_sale .header .header_custom_nav {
-    display: none;
-  }
-  .header_white .header_custom_contact .custom_contact_number, .main_page .header .header_custom_contact .custom_contact_number, .main_page_sale .header .header_custom_contact .custom_contact_number {
-    display: none;
-  }
-  .header_white .header_custom_contact .form_register_header, .main_page .header .header_custom_contact .form_register_header, .main_page_sale .header .header_custom_contact .form_register_header {
-    display: block;
-    position: absolute;
-    top: -40px;
-  }
-  .header_white .header_custom_contact .header_logo_whatsap, .main_page .header .header_custom_contact .header_logo_whatsap, .main_page_sale .header .header_custom_contact .header_logo_whatsap {
-    display: none;
-  }
-  .header_white .header_custom_contact .header_logo_telegram, .main_page .header .header_custom_contact .header_logo_telegram, .main_page_sale .header .header_custom_contact .header_logo_telegram {
+  .header_white .header_custom, .main_page .header .header_custom, .main_page_sale .header .header_custom {
     display: none;
   }
   .header_white .header_page .container-fluid, .main_page .header .header_page .container-fluid, .main_page_sale .header .header_page .container-fluid {

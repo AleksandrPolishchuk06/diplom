@@ -8,7 +8,7 @@
 
     .footer_information {
         display: grid;
-        grid-template-columns: 20% 70%;
+        grid-template-columns: 30% 60%;
         gap: 5%;
         padding: 3%;
 
@@ -58,6 +58,7 @@
                 align-items: center;
                 justify-content: start;
 
+
                 img {
                     margin: 0 10px;
                 }
@@ -66,7 +67,7 @@
                     font-weight: 400;
                     font-size: 14px;
                     color: $black_font_color;
-                    margin-right: 10px;
+                    margin: 0;
                 }
 
 
@@ -83,7 +84,7 @@
 
     .footer_card_box {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: space-between;
         border-top: 1px solid $border_white_color;
         padding: 2% 2% 7% 2%;
@@ -95,7 +96,7 @@
             border: 1px solid $black_font_color;
             padding: 2%;
             border-radius: 7px;
-            width: 200px;
+            width: 15vw;
             height: 100px;
 
             .footer_logo_box {
@@ -130,6 +131,10 @@
         gap: 5px;
     }
 }
+
+
+
+
 
 @media (max-width: 998px) {
     .footer_dubl {

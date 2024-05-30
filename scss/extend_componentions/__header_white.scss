@@ -31,11 +31,10 @@
                 margin-bottom: 0 !important;
                 text-decoration: none;
                 color: $border_white_color !important;
+                background-color: $border_color_black;
+                padding: 15px 40px;
             }
 
-            .form_register_header {
-                @extend .form_register_header;
-            }
 
             .header_logo_whatsap {
                 width: 25px;
@@ -116,32 +115,7 @@
 
         .header_custom {
 
-
-            &_nav {
-                display: none;
-            }
-
-
-            &_contact {
-
-                .custom_contact_number {
-                    display: none
-                }
-
-                .form_register_header {
-                    display: block;
-                    position: absolute;
-                    top: -40px;
-                }
-
-                .header_logo_whatsap {
-                    display: none;
-                }
-
-                .header_logo_telegram {
-                    display: none;
-                }
-            }
+            display: none;
 
         }
 
