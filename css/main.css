@@ -98,6 +98,49 @@
   opacity: 0.5;
 }
 
+.form_valid {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.form_valid input {
+  width: 100%;
+}
+.form_valid .input_btn {
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: white;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.01);
+  padding: 10px 25px;
+}
+.form_valid input {
+  width: 100% !important;
+  outline: none;
+  margin: 10px 0;
+  border: 1px solid black !important;
+  border-radius: 10px;
+  height: 50px;
+  padding-left: 5px;
+}
+.form_valid input:-moz-placeholder-shown {
+  color: black;
+}
+.form_valid input:placeholder-shown {
+  color: black;
+}
+.form_valid input:focus {
+  box-shadow: 0 10px 10px -10px, 0 10px 10px -10px black;
+}
+.form_valid input:focus:valid {
+  border: 1.5px solid green;
+}
+.form_valid input:focus:invalid {
+  border: 1.5px solid #E30A17;
+}
+
 .form_register .form_valid, .form_register_header .form_valid, .header_white .header_custom_contact .form_register_header .form_valid, .header .header_custom_contact .form_register_header .form_valid, .form_register_footer .form_valid {
   display: flex;
   flex-direction: column;
@@ -118,14 +161,8 @@
   outline: none;
   margin: 10px 0;
   border: 1px solid black !important;
-  border-radius: 16px;
-  padding: 20px 195px 20px 25px;
-}
-.form_register .form_valid input:-moz-placeholder-shown, .form_register_header .form_valid input:-moz-placeholder-shown, .form_register_footer .form_valid input:-moz-placeholder-shown {
-  color: black;
-}
-.form_register .form_valid input:placeholder-shown, .form_register_header .form_valid input:placeholder-shown, .form_register_footer .form_valid input:placeholder-shown {
-  color: black;
+  border-radius: 10px;
+  padding: 20px 0px 20px 25px;
 }
 .form_register .form_valid input:focus, .form_register_header .form_valid input:focus, .form_register_footer .form_valid input:focus {
   box-shadow: 0 10px 10px -10px, 0 10px 10px -10px black;
@@ -179,7 +216,7 @@
 }
 .form_register_header .btn-primary, .header_white .header_custom_contact .form_register_header .btn-primary, .header .header_custom_contact .form_register_header .btn-primary {
   color: white !important;
-  padding: 14px 60px !important;
+  padding: 15px 60px !important;
   border: none !important;
   margin: 0 5px;
 }
@@ -882,7 +919,20 @@
     height: -moz-fit-content;
     height: fit-content;
   }
-  .header .header_custom {
+  .header .header_custom_nav {
+    display: none;
+  }
+  .header .header_custom_contact .custom_contact_number {
+    display: none;
+  }
+  .header .header_custom_contact .form_register_header {
+    display: block;
+    position: absolute;
+  }
+  .header .header_custom_contact .header_logo_whatsap {
+    display: none;
+  }
+  .header .header_custom_contact .header_logo_telegram {
     display: none;
   }
   .header .header_page .container-fluid {
@@ -2171,7 +2221,21 @@
     height: -moz-fit-content;
     height: fit-content;
   }
-  .header_white .header_custom, .main_page .header .header_custom, .main_page_sale .header .header_custom {
+  .header_white .header_custom_nav, .main_page .header .header_custom_nav, .main_page_sale .header .header_custom_nav {
+    display: none;
+  }
+  .header_white .header_custom_contact .custom_contact_number, .main_page .header .header_custom_contact .custom_contact_number, .main_page_sale .header .header_custom_contact .custom_contact_number {
+    display: none;
+  }
+  .header_white .header_custom_contact .form_register_header, .main_page .header .header_custom_contact .form_register_header, .main_page_sale .header .header_custom_contact .form_register_header {
+    display: block;
+    position: absolute;
+    top: -40px;
+  }
+  .header_white .header_custom_contact .header_logo_whatsap, .main_page .header .header_custom_contact .header_logo_whatsap, .main_page_sale .header .header_custom_contact .header_logo_whatsap {
+    display: none;
+  }
+  .header_white .header_custom_contact .header_logo_telegram, .main_page .header .header_custom_contact .header_logo_telegram, .main_page_sale .header .header_custom_contact .header_logo_telegram {
     display: none;
   }
   .header_white .header_page .container-fluid, .main_page .header .header_page .container-fluid, .main_page_sale .header .header_page .container-fluid {

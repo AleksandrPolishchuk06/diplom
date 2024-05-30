@@ -107,7 +107,30 @@
         height: fit-content;
 
         .header_custom {
-            display: none;
+            &_nav {
+                display: none;
+            }
+
+            &_contact {
+
+                .custom_contact_number {
+                    display: none
+                }
+
+                .form_register_header {
+                    display: block;
+                    position: absolute;
+                }
+
+                .header_logo_whatsap {
+                    display: none;
+                }
+
+                .header_logo_telegram {
+                    display: none;
+                }
+            }
+
         }
 
         .header_page {
