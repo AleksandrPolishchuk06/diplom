@@ -246,3 +246,72 @@
     <script src="./bootstrap-5.0.2-dist/js/bootstrap.js"></script>
   </body>
 </html>
+<button
+  type="button"
+  class="btn btn-primary"
+  data-bs-toggle="modal"
+  data-bs-target="#exampleModal"
+  data-bs-whatever="@mdo"
+>
+  Открыть модальное окно для @mdo
+</button>
+<button
+  type="button"
+  class="btn btn-primary"
+  data-bs-toggle="modal"
+  data-bs-target="#exampleModal"
+  data-bs-whatever="@fat"
+>
+  Открыть модальное окно для @fat
+</button>
+
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Новое сообщение</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Закрыть"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form class="form_valid">
+          <input
+            class="input"
+            type="text"
+            placeholder="Name"
+            required
+            pattern="^[а-яА-Я]+$"
+          />
+          <input
+            class="input"
+            type="text"
+            placeholder="Phone"
+            required
+            pattern="^[а-яА-Я]+$"
+          />
+
+          <input
+            type="email"
+            placeholder="Enter email address"
+            minlength="6"
+            maxlength="26"
+            pattern="^[^@]+@[^@]+\.[^@]+$"
+            required
+          />
+
+          <button class="input_btn">Request a call back</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

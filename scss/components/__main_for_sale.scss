@@ -4,9 +4,23 @@
     width: 100%;
     overflow-x: hidden;
     border-radius: 0;
-
+    padding: 0;
 }
 
+.form-select {
+    width: 40% !important;
+    margin-bottom: 40px;
+}
+
+.main_baner_price_filter {
+    display: flex;
+    gap: 10%;
+
+    .form-select {
+        width: 40% !important;
+        margin-bottom: 40px;
+    }
+}
 
 .main_for_sale {
     display: grid;
@@ -19,15 +33,12 @@
     }
 
     .filter_destop {
-
         .main_baner_filter {
             background-color: $main_font_color;
-
 
             .main_baner_filter_sort {
                 padding: 4%;
                 border-bottom: 1px solid $background_color;
-
 
                 .main_baner_sort_title {
                     margin-top: 40px;
@@ -55,19 +66,6 @@
                     line-height: 130%;
                     color: #000;
                     margin-bottom: 10px;
-
-                }
-
-                .main_baner_price_filter {
-
-                    display: flex;
-                    gap: 15%;
-
-                    .form-select {
-                        width: 40%;
-                        margin-bottom: 40px;
-
-                    }
                 }
             }
         }
@@ -82,7 +80,7 @@
         .main_baner_check {
             display: flex;
             flex-wrap: wrap;
-            padding: 5%;
+            padding: 2%;
             gap: 5px;
 
             & div {
@@ -104,7 +102,7 @@
         .car_logo {
             display: flex;
             flex-wrap: wrap;
-            padding: 5%;
+            padding: 2%;
             gap: 5px;
 
             & div {
@@ -113,7 +111,8 @@
                 border: 1px solid $background_color;
             }
 
-            @each $logo in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27 {
+            @each $logo in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26,
+            27 {
                 .logo#{$logo} {
                     background-image: url(../image/car_logo/#{$logo}.png);
                     background-position: center;
@@ -123,14 +122,11 @@
             }
         }
     }
-
 }
 
-@media (max-width:607px) {
-
+@media (max-width: 607px) {
     .main_page_sale {
         max-height: 250px;
-
     }
 
     .main_for_sale {
@@ -146,18 +142,13 @@
         .acordeon_filter_for_sale {
             display: contents;
 
-
             .main_baner_filter_sort {
                 padding: 4%;
                 border-bottom: 1px solid $background_color;
 
-
                 .main_baner_sort_title {
+                    @include font_style(600, 16px, 0.01em, $black_font_color);
                     margin-top: 40px;
-                    font-weight: 600;
-                    font-size: 16px;
-                    line-height: 130%;
-                    color: #000;
                     margin-bottom: 10px;
                 }
 
@@ -172,24 +163,17 @@
                 border-bottom: 1px solid $background_color;
 
                 .price_filter_title {
-                    margin-top: 40px;
-                    font-weight: 600;
-                    font-size: 16px;
-                    line-height: 130%;
-                    color: #000;
-                    margin-bottom: 10px;
-
+                    @include font_style(600, 40px, 0.01em, $black_font_color);
+                    margin: 40px 0 10px 0;
                 }
 
                 .main_baner_price_filter {
-
                     display: flex;
                     gap: 15%;
 
                     .form-select {
                         width: 40%;
                         margin-bottom: 40px;
-
                     }
                 }
             }
@@ -201,13 +185,10 @@
 
         .main_baner_check {
             display: none;
-
         }
 
         .car_logo {
-            display: none
+            display: none;
         }
-
     }
-
 }

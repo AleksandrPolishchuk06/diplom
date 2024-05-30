@@ -4,15 +4,9 @@
     padding: 0 3%;
 
     .hot_deals_title {
-        font-weight: 400;
-        font-size: 30px;
-        line-height: 130%;
-        letter-spacing: 0.05em;
-        color: #000;
+        @include font_style(400, 30px, 0.05em, $black_font_color);
         text-align: center;
         margin-bottom: 30px;
-
-
     }
 
     .hot_deals_box {
@@ -26,37 +20,27 @@
 
             .hot_deals_card_brand {
                 color: $black_font_color;
-
             }
         }
 
         .hot_deals_card {
             @extend .hot_deals_card_draft;
-
         }
-
     }
-
 }
 
-@media (min-width:607px) and (max-width:998px) {
+@media (min-width: 607px) and (max-width: 998px) {
     .hot_deals {
         display: grid;
         margin-top: 50px;
         padding: 0;
-
-
-
     }
 }
 
-@media (max-width:606px) {
+@media (max-width: 606px) {
     .hot_deals {
         display: grid;
         margin-top: 50px;
         padding: 0;
-
-
-
     }
 }

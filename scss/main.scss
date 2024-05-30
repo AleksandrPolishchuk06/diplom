@@ -3,7 +3,6 @@
 @import "../scss/utilits/var/_colors";
 @import "../scss/utilits/var/_fonts";
 
-
 // components -main page
 @import "../scss/components/_tempelates";
 @import "../scss/components/_body";
@@ -16,13 +15,12 @@
 @import "../scss/components/_other_conditions";
 @import "../scss/components/_fotter";
 @import "../scss/extend_componentions/_header";
-@import "../scss/extend_componentions/_main_goods_card_section";
+@import "../scss/components/_main_goods_card_section";
 @import "../scss/extend_componentions/_fotter_dubl";
 @import "../scss/extend_componentions/_goods_cadr";
 @import "../scss/components/_main_for_sale";
 @import "../scss/components/_servising";
 @import "../scss/extend_componentions/_header_white";
-
-
+@import "../scss/extend_componentions/_navigation_btn";
 
 // components-goods card

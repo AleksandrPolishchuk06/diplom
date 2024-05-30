@@ -12,10 +12,8 @@
     justify-content: space-around;
     align-items: end;
 
-
     .other_conditions_mobile {
         display: none;
-
     }
 
     .other_conditions_destop {
@@ -24,7 +22,6 @@
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: end;
-
 
         .other_conditions_box {
             display: flex;
@@ -41,26 +38,20 @@
             text-align: center;
 
             .other_conditions_title {
-                font-weight: 400;
-                font-size: 20px;
+                @include font_style(400, 20px, 0.01em, $black_font_color);
                 line-height: 130%;
-                letter-spacing: 0.01em;
-                color: #000;
                 text-align: center;
             }
 
             .other_conditions_desc {
-                font-weight: 400;
-                font-size: 16px;
+                @include font_style(400, 16px, 0.01em, $black_font_color);
                 line-height: 130%;
-                letter-spacing: 0.01em;
-                color: #000;
             }
         }
     }
 }
 
-@media (max-width:999px) {
+@media (max-width: 999px) {
     .other_conditions {
         width: 100%;
 
@@ -70,7 +61,6 @@
 
         .other_conditions_mobile {
             display: block !important;
-
         }
     }
 }

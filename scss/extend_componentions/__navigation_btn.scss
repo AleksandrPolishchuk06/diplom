@@ -1,0 +1,20 @@
+// section buyer condition 
+// card_buyer_section
+
+.bayer_card_section {
+    border: 1px solid $border_color_black;
+    border-radius: 10px;
+    padding: 4%;
+}
+
+// chose_type section 
+// btn for choose
+
+.choose_type_btn_extend {
+    border: 1px solid $border_white_color;
+    color: $black_font_color;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    padding: 20px 10vw;
+    text-decoration: none !important;
+}

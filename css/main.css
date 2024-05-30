@@ -8,27 +8,23 @@
   text-decoration: none;
 }
 
-.other_conditions .accordion,
-.acordeon_filter_for_sale .accordion {
+.other_conditions .accordion {
   width: 100vw;
 }
-.other_conditions .accordion-item,
-.acordeon_filter_for_sale .accordion-item {
+.other_conditions .accordion-item {
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   background-color: rgba(255, 255, 255, 0.01);
   border: 1px solid #4f4f4f;
 }
-.other_conditions .accordion-button:not(.collapsed),
-.acordeon_filter_for_sale .accordion-button:not(.collapsed) {
+.other_conditions .accordion-button:not(.collapsed) {
   color: white;
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   background-color: rgba(87, 83, 83, 0.01);
   box-shadow: none;
 }
-.other_conditions .accordion-button,
-.acordeon_filter_for_sale .accordion-button {
+.other_conditions .accordion-button {
   position: relative;
   display: flex;
   align-items: center;
@@ -42,10 +38,150 @@
   background-color: rgba(81, 80, 75, 0.1);
   border: 0;
 }
-.other_conditions .accordion-body,
-.acordeon_filter_for_sale .accordion-body {
+.other_conditions .accordion-body {
   color: white;
   text-align: left;
+}
+
+.acordeon_filter_for_sale .accordion {
+  width: 100vw;
+}
+.acordeon_filter_for_sale .accordion-item {
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.01);
+  border: 1px solid #4f4f4f;
+}
+.acordeon_filter_for_sale .accordion-button:not(.collapsed) {
+  color: black;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  background-color: rgba(87, 83, 83, 0.01);
+  box-shadow: none;
+}
+.acordeon_filter_for_sale .accordion-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  color: black;
+  text-align: center;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  background-color: rgba(81, 80, 75, 0.1);
+  border: 0;
+}
+.acordeon_filter_for_sale .accordion-body {
+  color: black;
+  text-align: left;
+}
+
+.main_goods_card .r-30 {
+  border-radius: 30px;
+}
+.main_goods_card .carousel-control-prev {
+  top: 80%;
+  left: 75%;
+  width: 50px;
+  height: 30px;
+  background: #4f4f4f;
+  opacity: 0.5;
+}
+.main_goods_card .carousel-control-next {
+  top: 80%;
+  right: 5%;
+  width: 50px;
+  height: 30px;
+  background: #4f4f4f;
+  opacity: 0.5;
+}
+
+.form_register .form_valid, .form_register_header .form_valid, .header_white .header_custom_contact .form_register_header .form_valid, .header .header_custom_contact .form_register_header .form_valid, .form_register_footer .form_valid {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.form_register .form_valid .input_btn, .form_register_header .form_valid .input_btn, .form_register_footer .form_valid .input_btn {
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: white;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  background-color: rgba(255, 255, 255, 0.01);
+  padding: 10px 25px;
+}
+.form_register .form_valid input, .form_register_header .form_valid input, .header_white .header_custom_contact .form_register_header .form_valid input, .header .header_custom_contact .form_register_header .form_valid input, .form_register_footer .form_valid input {
+  width: 100%;
+  outline: none;
+  margin: 10px 0;
+  border: 1px solid black !important;
+  border-radius: 16px;
+  padding: 20px 195px 20px 25px;
+}
+.form_register .form_valid input:-moz-placeholder-shown, .form_register_header .form_valid input:-moz-placeholder-shown, .form_register_footer .form_valid input:-moz-placeholder-shown {
+  color: black;
+}
+.form_register .form_valid input:placeholder-shown, .form_register_header .form_valid input:placeholder-shown, .form_register_footer .form_valid input:placeholder-shown {
+  color: black;
+}
+.form_register .form_valid input:focus, .form_register_header .form_valid input:focus, .form_register_footer .form_valid input:focus {
+  box-shadow: 0 10px 10px -10px, 0 10px 10px -10px black;
+}
+.form_register .form_valid input:focus:valid, .form_register_header .form_valid input:focus:valid, .form_register_footer .form_valid input:focus:valid {
+  border: 1.5px solid green;
+}
+.form_register .form_valid input:focus:invalid, .form_register_header .form_valid input:focus:invalid, .form_register_footer .form_valid input:focus:invalid {
+  border: 1.5px solid #E30A17;
+}
+.form_register .modal-title, .form_register_header .modal-title, .header_white .header_custom_contact .form_register_header .modal-title, .header .header_custom_contact .form_register_header .modal-title, .form_register_footer .modal-title {
+  color: white;
+}
+.form_register .btn, .form_register_header .btn, .header_white .header_custom_contact .form_register_header .btn, .header .header_custom_contact .form_register_header .btn, .form_register_footer .btn {
+  color: black !important;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+.form_register .btn-primary, .form_register_header .btn-primary, .header_white .header_custom_contact .form_register_header .btn-primary, .header .header_custom_contact .form_register_header .btn-primary, .form_register_footer .btn-primary {
+  color: black !important;
+  -webkit-backdrop-filter: blur(6px) !important;
+          backdrop-filter: blur(6px) !important;
+  background-color: rgba(81, 80, 75, 0.1) !important;
+  border-color: #f1f0eb;
+  border: 1px solid #4f4f4f !important;
+  padding: 10px 30px !important;
+}
+.form_register .modal-content, .form_register_header .modal-content, .header_white .header_custom_contact .form_register_header .modal-content, .header .header_custom_contact .form_register_header .modal-content, .form_register_footer .modal-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  -webkit-backdrop-filter: blur(4px) !important;
+          backdrop-filter: blur(4px) !important;
+  background-color: rgba(81, 80, 75, 0.1) !important;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
+
+.form_register_footer .btn {
+  color: white !important;
+  background-color: black !important;
+}
+.form_register_footer .btn-primary {
+  color: white !important;
+  padding: 10px 5vw !important;
+}
+
+.form_register_header .btn, .header_white .header_custom_contact .form_register_header .btn, .header .header_custom_contact .form_register_header .btn {
+  color: white !important;
+  background-color: black !important;
+}
+.form_register_header .btn-primary, .header_white .header_custom_contact .form_register_header .btn-primary, .header .header_custom_contact .form_register_header .btn-primary {
+  color: white !important;
+  padding: 14px 60px !important;
+  border: none !important;
+  margin: 0 5px;
 }
 
 .body_main {
@@ -82,14 +218,12 @@
 .main_page .main_baner .main_baner_title, .main_page_sale .main_baner .main_baner_title {
   font-weight: 800;
   font-size: 49px;
-  line-height: 130%;
-  color: rgb(218, 25, 205);
   letter-spacing: 0.05em;
+  color: white;
 }
 .main_page .main_baner .main_baner_desc, .main_page_sale .main_baner .main_baner_desc {
   font-weight: 500;
   font-size: 49px;
-  line-height: 130%;
   letter-spacing: 0.05em;
   color: white;
 }
@@ -108,7 +242,7 @@
   right: 140px;
   font-weight: 700;
   font-size: 18px;
-  line-height: 130%;
+  letter-spacing: 0.01em;
   color: black;
 }
 
@@ -187,13 +321,13 @@
 }
 .second_baner .second_baner_card .second_baner_card_text {
   position: absolute;
+  font-weight: 400;
+  font-size: 49px;
+  letter-spacing: 0.12em;
+  color: white;
   top: 20px;
   left: 20px;
-  font-weight: 400;
-  font-size: 24px;
   line-height: 130%;
-  letter-spacing: 0.12em;
-  color: #fff;
 }
 .second_baner .second_baner_card .second_baner_card_btn {
   position: absolute;
@@ -209,6 +343,9 @@
   color: #fff;
   text-decoration: none;
 }
+.second_baner .second_baner_card .second_baner_card_mobile {
+  width: 100%;
+}
 .second_baner .second_baner_card .second_baner_card_img {
   width: 100%;
 }
@@ -217,8 +354,38 @@
 }
 
 @media (max-width: 999px) {
+  .second_baner .second_baner_card {
+    position: relative;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-bottom: 10px;
+  }
+  .second_baner .second_baner_card .second_baner_card_text {
+    font-size: 20px;
+  }
+  .second_baner .second_baner_card .second_baner_card_btn {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 607px) {
   .second_baner {
-    display: none;
+    width: 100%;
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 0 20px;
+    padding: 0;
+    margin-top: 10px;
+  }
+  .second_baner .second_baner_card {
+    position: relative;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-bottom: 10px;
+  }
+  .second_baner .second_baner_card .second_baner_card_text {
+    font-size: 20px;
   }
 }
 .choose_type {
@@ -226,7 +393,7 @@
   margin-top: 50px;
 }
 .choose_type .choose_type_title {
-  font-weight: 400;
+  font-weight: 700;
   font-size: 20px;
   letter-spacing: 0.05em;
   color: black;
@@ -251,13 +418,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 130%;
-  border: 1px solid white;
-  color: black;
-  letter-spacing: 0.01em;
-  text-transform: uppercase;
-  padding: 20px 15vw;
   background-color: #4071cb;
-  text-decoration: none !important;
 }
 .choose_type .choose_type_nav .choose_type_brand {
   border-radius: 0px 10px 10px 0px;
@@ -267,12 +428,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 130%;
-  padding: 20px 20vw;
   border: 1px solid white;
-  color: black;
-  letter-spacing: 0.01em;
-  text-transform: uppercase;
-  text-decoration: none !important;
 }
 .choose_type .choose_type_body_box {
   padding: 3%;
@@ -372,9 +528,8 @@
 .hot_deals .hot_deals_title {
   font-weight: 400;
   font-size: 30px;
-  line-height: 130%;
   letter-spacing: 0.05em;
-  color: #000;
+  color: black;
   text-align: center;
   margin-bottom: 30px;
 }
@@ -430,11 +585,10 @@
 .buyer_conditions .buyer_conditions_title {
   font-weight: 400;
   font-size: 30px;
-  line-height: 145%;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
-  text-align: center;
   color: black;
+  line-height: 145%;
+  text-transform: uppercase;
   margin-bottom: 20px;
 }
 .buyer_conditions .buyer_conditions_box {
@@ -446,33 +600,18 @@
 }
 .buyer_conditions .buyer_conditions_box .buyer_conditions_card1 {
   grid-area: buyer_conditions_card1;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 4%;
 }
 .buyer_conditions .buyer_conditions_box .buyer_conditions_card2 {
   grid-area: buyer_conditions_card2;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 4%;
 }
 .buyer_conditions .buyer_conditions_box .buyer_conditions_card3 {
   grid-area: buyer_conditions_card3;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 4%;
 }
 .buyer_conditions .buyer_conditions_box .buyer_conditions_card4 {
   grid-area: buyer_conditions_card4;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 4%;
 }
 .buyer_conditions .buyer_conditions_box .buyer_conditions_card5 {
   grid-area: buyer_conditions_card5;
-  border: 1px solid;
-  border-radius: 10px;
-  padding: 4%;
 }
 .buyer_conditions .buyer_conditions_box .buyer_conditions_card5 .buyer_conditions_card_nav {
   display: flex;
@@ -493,24 +632,25 @@
 .buyer_conditions .buyer_conditions_box .buyer_conditions_card_num {
   font-weight: 800;
   font-size: 32px;
-  line-height: 130%;
   letter-spacing: 0.01em;
   color: black;
+  line-height: 130%;
   margin-bottom: 60px;
 }
 .buyer_conditions .buyer_conditions_box .buyer_conditions_card_title {
   font-weight: 700;
   font-size: 24px;
-  line-height: 130%;
   letter-spacing: 0.01em;
   color: black;
+  line-height: 130%;
   margin-bottom: 10px;
 }
 .buyer_conditions .buyer_conditions_box .buyer_conditions_card_desc {
   font-weight: 400;
   font-size: 18px;
-  line-height: 130%;
   letter-spacing: 0.01em;
+  color: black;
+  line-height: 130%;
   color: black;
 }
 
@@ -536,19 +676,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .buyer_conditions .buyer_conditions_box .buyer_conditions_card5 .buyer_conditions_card_nav .card_nav_btn {
-    border: 2px solid #4f4f4f;
-    border-radius: 8px;
-    width: 200px;
-    height: 45px;
-    text-align: center;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 130%;
-    color: black;
-    padding: 14px;
-    text-decoration: none !important;
   }
   .buyer_conditions .buyer_conditions_box .buyer_conditions_card_num {
     margin-bottom: 10px;
@@ -582,19 +709,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  .buyer_conditions .buyer_conditions_box .buyer_conditions_card5 .buyer_conditions_card_nav .card_nav_btn {
-    border: 2px solid #4f4f4f;
-    border-radius: 8px;
-    width: 200px;
-    height: 45px;
-    text-align: center;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 130%;
-    color: black;
-    padding: 14px;
-    text-decoration: none !important;
   }
   .buyer_conditions .buyer_conditions_box .buyer_conditions_card_num {
     margin-bottom: 10px;
@@ -653,17 +767,17 @@
 .other_conditions .other_conditions_destop .other_conditions_box .other_conditions_title {
   font-weight: 400;
   font-size: 20px;
-  line-height: 130%;
   letter-spacing: 0.01em;
-  color: #000;
+  color: black;
+  line-height: 130%;
   text-align: center;
 }
 .other_conditions .other_conditions_destop .other_conditions_box .other_conditions_desc {
   font-weight: 400;
   font-size: 16px;
-  line-height: 130%;
   letter-spacing: 0.01em;
-  color: #000;
+  color: black;
+  line-height: 130%;
 }
 
 @media (max-width: 999px) {
@@ -703,18 +817,9 @@
 }
 .header .header_custom_contact .custom_contact_number {
   margin-right: 20px;
+  margin-bottom: 0 !important;
   text-decoration: none;
   color: black !important;
-}
-.header .header_custom_contact .custom_contact_reqeust {
-  padding: 17px 51px;
-  background-color: #000;
-  font-size: 14px;
-  margin-right: 20px;
-  color: white;
-  text-align: center;
-  margin-bottom: 0px;
-  text-decoration: none;
 }
 .header .header_custom_contact .header_logo_whatsap {
   width: 25px;
@@ -810,25 +915,6 @@
   justify-self: center;
   text-decoration: none !important;
 }
-.main_goods_card .r-30 {
-  border-radius: 30px;
-}
-.main_goods_card .carousel-control-prev {
-  top: 80%;
-  left: 75%;
-  width: 50px;
-  height: 30px;
-  background: #4f4f4f;
-  opacity: 0.5;
-}
-.main_goods_card .carousel-control-next {
-  top: 80%;
-  right: 5%;
-  width: 50px;
-  height: 30px;
-  background: #4f4f4f;
-  opacity: 0.5;
-}
 .main_goods_card .goods_card .goods_card_nav {
   width: 100%;
   display: flex;
@@ -847,9 +933,8 @@
 .main_goods_card .goods_card .goods_card_title {
   font-weight: 400;
   font-size: 32px;
-  line-height: 130%;
   letter-spacing: 0.09em;
-  color: #000;
+  color: black;
   margin-bottom: 30px;
 }
 .main_goods_card .goods_card .goods_card_box {
@@ -866,24 +951,22 @@
   height: fit-content;
 }
 .main_goods_card .goods_card .goods_card_box .car_baner_box .car_box_description {
-  background: #fff;
+  background: white;
   border-radius: 0px 0px 0 0px;
   padding: 3%;
 }
 .main_goods_card .goods_card .goods_card_box .car_baner_box .car_box_description .car_box_title {
   font-weight: 400;
   font-size: 24px;
-  line-height: 130%;
   letter-spacing: 0.09em;
-  color: #000;
+  color: black;
   text-align: start;
 }
 .main_goods_card .goods_card .goods_card_box .car_baner_box .car_box_description .car_box_text {
   font-weight: 300;
   font-size: 16px;
-  line-height: 130%;
   letter-spacing: 0.09em;
-  color: #000;
+  color: black;
   text-align: start;
 }
 .main_goods_card .goods_card .goods_card_box .car_baner_box .car_box_characteristic {
@@ -894,7 +977,7 @@
   border-radius: 0px 0px 30px 30px;
 }
 .main_goods_card .goods_card .goods_card_box .car_baner_box .car_box_characteristic .car_box_item {
-  background: #fff;
+  background: white;
   border: 1px solid #f1f0eb;
   display: flex;
   flex-direction: column;
@@ -913,15 +996,14 @@
   border-radius: 30px;
   width: 95%;
   height: 695px;
-  background: #fff;
+  background: white;
   padding: 3%;
 }
 .main_goods_card .goods_card .goods_card_box .card_car_char_list .char_list_title {
   font-weight: 400;
   font-size: 24px;
-  line-height: 130%;
   letter-spacing: 0.09em;
-  color: #000;
+  color: black;
   margin-bottom: 20px;
 }
 .main_goods_card .goods_card .goods_card_box .card_car_char_list .char_list_value {
@@ -931,22 +1013,21 @@
   height: 495px;
 }
 .main_goods_card .goods_card .goods_card_box .card_car_char_list .char_list_value .value_title {
-  display: flex;
-  justify-content: space-between;
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;
-  line-height: 130%;
   letter-spacing: 0.09em;
-  color: #000;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  line-height: 130%;
 }
 .main_goods_card .goods_card .goods_card_box .card_car_char_list .char_list_value .value_title .value_q {
   font-weight: bold;
   font-size: 14px;
-  line-height: 130%;
   letter-spacing: 0.09em;
+  color: black;
+  line-height: 130%;
   text-align: right;
-  color: #000;
 }
 .main_goods_card .goods_card .goods_card_box .card_car_char_list .char_list_btn {
   border: 1px solid #4f4f4f;
@@ -1175,16 +1256,6 @@
   color: black;
   margin-right: 10px;
 }
-.footer_dubl .footer_information .footer_contact .footer_custom_contact .footer_contact_reqeust, .footer .footer_information .footer_contact .footer_custom_contact .footer_contact_reqeust {
-  padding: 18px 46px;
-  background-color: black;
-  margin-right: 18px;
-  color: white !important;
-  text-align: center;
-  margin: 0 10px;
-  border-radius: 10px;
-  text-decoration: none !important;
-}
 .footer_dubl .footer_information .footer_contact .footer_contact_addres, .footer .footer_information .footer_contact .footer_contact_addres {
   font-weight: 400;
   font-size: 12px;
@@ -1264,16 +1335,6 @@
   .footer_dubl .footer_information .footer_contact .footer_custom_contact .footer_contact_number, .footer .footer_information .footer_contact .footer_custom_contact .footer_contact_number {
     margin: 0;
   }
-  .footer_dubl .footer_information .footer_contact .footer_custom_contact .footer_contact_reqeust, .footer .footer_information .footer_contact .footer_custom_contact .footer_contact_reqeust {
-    padding: 18px 46px;
-    background-color: black;
-    margin-right: 18px;
-    color: white !important;
-    text-align: center;
-    margin: 0 10px;
-    border-radius: 10px;
-    text-decoration: none !important;
-  }
   .footer_dubl .footer_information .footer_contact .footer_contact_addres, .footer .footer_information .footer_contact .footer_contact_addres {
     font-weight: 400;
     font-size: 12px;
@@ -1316,16 +1377,6 @@
   }
   .footer_dubl .footer_information .footer_contact .footer_custom_contact .footer_contact_number, .footer .footer_information .footer_contact .footer_custom_contact .footer_contact_number {
     display: none;
-  }
-  .footer_dubl .footer_information .footer_contact .footer_custom_contact .footer_contact_reqeust, .footer .footer_information .footer_contact .footer_custom_contact .footer_contact_reqeust {
-    padding: 7px;
-    background-color: black;
-    margin-right: 5px;
-    color: white !important;
-    text-align: center;
-    margin-left: 3vw;
-    border-radius: 10px;
-    text-decoration: none !important;
   }
   .footer_dubl .footer_information .footer_contact .footer_contact_addres, .footer .footer_information .footer_contact .footer_contact_addres {
     margin-top: 20px;
@@ -1430,14 +1481,14 @@
   margin-bottom: 0;
 }
 
-@media (max-width: 606px) {
+@media (max-width: 800px) {
   .hot_deals_card_draft, .hot_deals .hot_deals_box .hot_deals_card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 2vw;
     border-radius: 10px;
-    width: 90%;
+    width: 95%;
     height: 390px;
     margin-bottom: 10px;
   }
@@ -1466,9 +1517,9 @@
   .hot_deals_card_draft .hot_deals_img, .hot_deals .hot_deals_box .hot_deals_card .hot_deals_img {
     justify-content: center;
     position: absolute;
-    width: 70vw;
-    top: 90px;
-    left: 15vw;
+    width: 50%;
+    top: 30%;
+    left: 18vw;
   }
   .hot_deals_card_draft .hot_deals_char, .hot_deals .hot_deals_box .hot_deals_card .hot_deals_char {
     display: flex;
@@ -1521,11 +1572,117 @@
     margin-bottom: 0;
   }
 }
+@media (max-width: 606px) {
+  .hot_deals_card_draft, .hot_deals .hot_deals_box .hot_deals_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2vw;
+    border-radius: 10px;
+    width: 90%;
+    height: 400px;
+    margin-bottom: 10px;
+  }
+  .hot_deals_card_draft .hot_deals_card_title, .hot_deals .hot_deals_box .hot_deals_card .hot_deals_card_title {
+    margin-top: 5px;
+    font-size: 24px;
+    text-align: center;
+  }
+  .hot_deals_card_draft .hot_deals_card_year, .hot_deals .hot_deals_box .hot_deals_card .hot_deals_card_year {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0.12em;
+    color: #000;
+    margin-bottom: 0px;
+  }
+  .hot_deals_card_draft .hot_deals_card_brand, .hot_deals .hot_deals_box .hot_deals_card .hot_deals_card_brand {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 130%;
+    letter-spacing: 0.12em;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 140px;
+  }
+  .hot_deals_card_draft .hot_deals_img, .hot_deals .hot_deals_box .hot_deals_card .hot_deals_img {
+    justify-content: center;
+    position: absolute;
+    width: 65vw;
+    height: auto;
+    top: 20vw;
+    left: 15vw;
+  }
+  .hot_deals_card_draft .hot_deals_char, .hot_deals .hot_deals_box .hot_deals_card .hot_deals_char {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  }
+  .hot_deals_card_draft .hot_deals_char_item1::before, .hot_deals .hot_deals_box .hot_deals_card .hot_deals_char_item1::before {
+    content: url(../image/hot_deals/engine.svg);
+    vertical-align: middle;
+    margin-right: 4px;
+  }
+  .hot_deals_card_draft .hot_deals_char_item2::before, .hot_deals .hot_deals_box .hot_deals_card .hot_deals_char_item2::before {
+    content: url(../image/hot_deals/trans.svg);
+    vertical-align: middle;
+    margin-right: 4px;
+  }
+  .hot_deals_card_draft .hot_deals_char_item3::before, .hot_deals .hot_deals_box .hot_deals_card .hot_deals_char_item3::before {
+    content: url(../image/hot_deals/car.svg);
+    vertical-align: middle;
+    margin-right: 4px;
+  }
+  .hot_deals_card_draft .hot_deals_btn, .hot_deals .hot_deals_box .hot_deals_card .hot_deals_btn {
+    margin: auto;
+    padding: 14px 73px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 0.17em;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 8px;
+    height: 45px;
+    justify-content: center;
+    text-decoration: none;
+  }
+  .hot_deals_card_draft .hot_deals_condition, .hot_deals .hot_deals_box .hot_deals_card .hot_deals_condition {
+    display: flex;
+    position: absolute;
+    top: 45px;
+    right: 10px;
+  }
+  .hot_deals_card_draft .hot_deals_condition .hot_deals_cond_title, .hot_deals .hot_deals_box .hot_deals_card .hot_deals_condition .hot_deals_cond_title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0.12em;
+    color: #4071cb;
+    margin-left: 4px;
+    margin-bottom: 0;
+  }
+}
 .main_page_sale {
   max-height: 320px;
   width: 100%;
   overflow-x: hidden;
   border-radius: 0;
+  padding: 0;
+}
+
+.form-select {
+  width: 40% !important;
+  margin-bottom: 40px;
+}
+
+.main_baner_price_filter {
+  display: flex;
+  gap: 10%;
+}
+.main_baner_price_filter .form-select {
+  width: 40% !important;
+  margin-bottom: 40px;
 }
 
 .main_for_sale {
@@ -1568,14 +1725,6 @@
   color: #000;
   margin-bottom: 10px;
 }
-.main_for_sale .filter_destop .main_baner_filter .main_baner_price .main_baner_price_filter {
-  display: flex;
-  gap: 15%;
-}
-.main_for_sale .filter_destop .main_baner_filter .main_baner_price .main_baner_price_filter .form-select {
-  width: 40%;
-  margin-bottom: 40px;
-}
 .main_for_sale .filter_destop .car_logo_title {
   padding: 0px 5%;
   margin: 10px 0 0px 0;
@@ -1585,7 +1734,7 @@
 .main_for_sale .filter_destop .main_baner_check {
   display: flex;
   flex-wrap: wrap;
-  padding: 5%;
+  padding: 2%;
   gap: 5px;
 }
 .main_for_sale .filter_destop .main_baner_check div {
@@ -1650,7 +1799,7 @@
 .main_for_sale .filter_destop .car_logo {
   display: flex;
   flex-wrap: wrap;
-  padding: 5%;
+  padding: 2%;
   gap: 5px;
 }
 .main_for_sale .filter_destop .car_logo div {
@@ -1842,11 +1991,11 @@
     border-bottom: 1px solid #f1f0eb;
   }
   .main_for_sale .acordeon_filter_for_sale .main_baner_filter_sort .main_baner_sort_title {
-    margin-top: 40px;
     font-weight: 600;
     font-size: 16px;
-    line-height: 130%;
-    color: #000;
+    letter-spacing: 0.01em;
+    color: black;
+    margin-top: 40px;
     margin-bottom: 10px;
   }
   .main_for_sale .acordeon_filter_for_sale .main_baner_filter_sort .form-select {
@@ -1858,12 +2007,11 @@
     border-bottom: 1px solid #f1f0eb;
   }
   .main_for_sale .acordeon_filter_for_sale .main_baner_price .price_filter_title {
-    margin-top: 40px;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 130%;
-    color: #000;
-    margin-bottom: 10px;
+    font-size: 40px;
+    letter-spacing: 0.01em;
+    color: black;
+    margin: 40px 0 10px 0;
   }
   .main_for_sale .acordeon_filter_for_sale .main_baner_price .main_baner_price_filter {
     display: flex;
@@ -1958,18 +2106,9 @@
 }
 .header_white .header_custom_contact .custom_contact_number, .main_page .header .header_custom_contact .custom_contact_number, .main_page_sale .header .header_custom_contact .custom_contact_number {
   margin-right: 20px;
+  margin-bottom: 0 !important;
   text-decoration: none;
   color: white !important;
-}
-.header_white .header_custom_contact .custom_contact_reqeust, .main_page .header .header_custom_contact .custom_contact_reqeust, .main_page_sale .header .header_custom_contact .custom_contact_reqeust {
-  padding: 17px 51px;
-  background-color: #000;
-  font-size: 14px;
-  margin-right: 20px;
-  color: white;
-  text-align: center;
-  margin-bottom: 0px;
-  text-decoration: none;
 }
 .header_white .header_custom_contact .header_logo_whatsap, .main_page .header .header_custom_contact .header_logo_whatsap, .main_page_sale .header .header_custom_contact .header_logo_whatsap {
   width: 25px;
@@ -2057,4 +2196,18 @@
     padding-bottom: 0 !important;
     margin-right: 5vw;
   }
+}
+.bayer_card_section, .buyer_conditions .buyer_conditions_box .buyer_conditions_card1, .buyer_conditions .buyer_conditions_box .buyer_conditions_card2, .buyer_conditions .buyer_conditions_box .buyer_conditions_card3, .buyer_conditions .buyer_conditions_box .buyer_conditions_card4, .buyer_conditions .buyer_conditions_box .buyer_conditions_card5 {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 4%;
+}
+
+.choose_type_btn_extend, .choose_type .choose_type_nav .choose_type_body, .choose_type .choose_type_nav .choose_type_brand {
+  border: 1px solid white;
+  color: black;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  padding: 20px 10vw;
+  text-decoration: none !important;
 }/*# sourceMappingURL=main.css.map */

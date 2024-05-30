@@ -7,20 +7,16 @@
     padding: 0 5%;
     margin-top: 50px;
 
-
     .second_baner_card {
         position: relative;
         height: fit-content;
 
         .second_baner_card_text {
             position: absolute;
+            @include font_style(400, 49px, 0.12em, $main_font_color);
             top: 20px;
             left: 20px;
-            font-weight: 400;
-            font-size: 24px;
             line-height: 130%;
-            letter-spacing: 0.12em;
-            color: #fff;
         }
 
         .second_baner_card_btn {
@@ -37,9 +33,14 @@
             text-decoration: none;
         }
 
+        .second_baner_card_mobile {
+            width: 100%;
+        }
+
         .second_baner_card_img {
             width: 100%;
         }
+
     }
 
     .second_baner_card_box {
@@ -49,8 +50,50 @@
     }
 }
 
-@media (max-width:999px) {
+@media (max-width: 999px) {
+
     .second_baner {
-        display: none;
+        .second_baner_card {
+            position: relative;
+            height: fit-content;
+            margin-bottom: 10px;
+
+            .second_baner_card_text {
+                font-size: 20px;
+
+            }
+
+            .second_baner_card_btn {
+
+                padding: 10px 20px;
+
+            }
+        }
     }
+
+}
+
+@media (max-width: 607px) {
+    .second_baner {
+        width: 100%;
+        display: grid;
+        justify-self: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 0 20px;
+        padding: 0;
+        margin-top: 10px;
+
+        .second_baner_card {
+            position: relative;
+            height: fit-content;
+            margin-bottom: 10px;
+
+            .second_baner_card_text {
+                font-size: 20px;
+
+            }
+        }
+    }
+
 }

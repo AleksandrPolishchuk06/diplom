@@ -13,7 +13,6 @@
     overflow-y: hidden;
 
 
-
     .header {
         @extend .header_white;
     }
@@ -28,27 +27,17 @@
 
 
         .main_baner_title {
-            font-weight: 800;
-            font-size: 49px;
-            line-height: 130%;
-            color: rgb(218, 25, 205);
-            letter-spacing: 0.05em;
+            @include font_style(800, 49px, 0.05em, $main_font_color);
         }
 
         .main_baner_desc {
-            font-weight: 500;
-            font-size: 49px;
-            line-height: 130%;
-            letter-spacing: 0.05em;
-            color: $main_font_color;
+            @include font_style(500, 49px, 0.05em, $main_font_color);
         }
 
         .box {
             align-self: center;
             position: absolute;
             bottom: -20px;
-
-
 
             .main_baner_box {
                 width: 364px;
@@ -58,25 +47,19 @@
                     position: absolute;
                     bottom: 5px;
                     right: 140px;
-                    font-weight: 700;
-                    font-size: 18px;
-                    line-height: 130%;
-                    color: $black_font_color;
+                    @include font_style(700, 18px, 0.01em, $black_font_color);
                 }
             }
         }
     }
 }
 
-@media (max-width:999px) {
-
+@media (max-width: 999px) {
     .main_page {
         height: 98vh;
         width: 100vw;
 
-
         .main_baner {
-
             padding: 50px 10px 0 10px;
 
             .main_baner_title {
@@ -100,7 +83,6 @@
                     transform: translateX(-10%);
 
                     .baner_logo_text {
-
                         right: 67px;
                     }
                 }
@@ -109,15 +91,11 @@
     }
 }
 
-@media (max-width:606px) {
-
-
+@media (max-width: 606px) {
     .main_page {
         height: 98vh;
 
-
         .main_baner {
-
             padding: 50px 20px 0 20px;
 
             .main_baner_title {
@@ -141,7 +119,6 @@
                     transform: translateX(-10%);
 
                     .baner_logo_text {
-
                         right: 67px;
                     }
                 }

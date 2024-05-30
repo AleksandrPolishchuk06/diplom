@@ -18,7 +18,74 @@
           <a class="custom_contact_number" href="tel:+380686231796"
             >+38 (068) 62 31 796</a
           >
-          <a class="custom_contact_reqeust" href="">Request a callback</a>
+          <div class="form_register_header">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              data-bs-whatever="@fat"
+              class="card_nav_btn"
+            >
+              Requset a callback
+            </button>
+
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Send info for contant with you
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Закрыть"
+                    ></button>
+                  </div>
+                  <!--  -->
+                  <div class="modal-body">
+                    <!--  -->
+                    <form class="form_valid">
+                      <input
+                        class="input"
+                        type="text"
+                        placeholder="Name"
+                        required
+                        pattern="^[а-яА-Я]+$"
+                      />
+                      <input
+                        class="input"
+                        type="text"
+                        placeholder="Phone"
+                        required
+                        pattern="^[а-яА-Я]+$"
+                      />
+
+                      <input
+                        type="email"
+                        placeholder="Enter email address"
+                        minlength="6"
+                        maxlength="26"
+                        pattern="^[^@]+@[^@]+\.[^@]+$"
+                        required
+                      />
+
+                      <button class="input_btn">Request a call back</button>
+                    </form>
+                    <!--  -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <img
             class="header_logo_whatsap"
             src="./image/main_baner/whatsapp_icon.svg"
@@ -554,7 +621,74 @@
               src="./image/main_baner/telegram_icon.svg"
               alt="Telegram_logo"
             />
-            <a class="footer_contact_reqeust" href="">Request a callback</a>
+            <div class="form_register_footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                data-bs-whatever="@fat"
+                class="card_nav_btn"
+              >
+                Requset
+              </button>
+
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Send info for contant with you
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Закрыть"
+                      ></button>
+                    </div>
+                    <!--  -->
+                    <div class="modal-body">
+                      <!--  -->
+                      <form class="form_valid">
+                        <input
+                          class="input"
+                          type="text"
+                          placeholder="Name"
+                          required
+                          pattern="^[а-яА-Я]+$"
+                        />
+                        <input
+                          class="input"
+                          type="text"
+                          placeholder="Phone"
+                          required
+                          pattern="^[а-яА-Я]+$"
+                        />
+
+                        <input
+                          type="email"
+                          placeholder="Enter email address"
+                          minlength="6"
+                          maxlength="26"
+                          pattern="^[^@]+@[^@]+\.[^@]+$"
+                          required
+                        />
+
+                        <button class="input_btn">Request</button>
+                      </form>
+                      <!--  -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <p class="footer_contact_addres">
             Our adress: <br />
