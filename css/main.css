@@ -1605,8 +1605,8 @@
     position: absolute;
     width: 250px;
     height: auto;
-    top: 20vw;
-    left: 10vw;
+    transform: translateY(calc(29% - 40px));
+    left: 15%;
   }
   .hot_deals_card_draft .hot_deals_char, .hot_deals .hot_deals_box .hot_deals_card .hot_deals_char {
     display: flex;
@@ -1684,7 +1684,7 @@
   display: grid;
   width: 100%;
   align-self: center;
-  grid-template-columns: minmax(290px, 20%) auto;
+  grid-template-columns: minmax(252px, 20%) auto;
 }
 .main_for_sale .acordeon_filter_for_sale {
   display: none;
@@ -1693,7 +1693,7 @@
   background-color: white;
 }
 .main_for_sale .filter_destop .main_baner_filter .main_baner_filter_sort {
-  padding: 4%;
+  padding: 2%;
   border-bottom: 1px solid #f1f0eb;
 }
 .main_for_sale .filter_destop .main_baner_filter .main_baner_filter_sort .main_baner_sort_title {
@@ -1729,11 +1729,11 @@
 .main_for_sale .filter_destop .main_baner_check {
   display: flex;
   flex-wrap: wrap;
-  padding: 2%;
-  gap: 5px;
+  padding: 1%;
+  gap: 2px;
 }
 .main_for_sale .filter_destop .main_baner_check div {
-  width: 85px;
+  width: 80px;
   height: 70px;
   border: 1px solid #f1f0eb;
 }
@@ -1794,11 +1794,11 @@
 .main_for_sale .filter_destop .car_logo {
   display: flex;
   flex-wrap: wrap;
-  padding: 2%;
-  gap: 5px;
+  padding: 1%;
+  gap: 3px;
 }
 .main_for_sale .filter_destop .car_logo div {
-  width: 85px;
+  width: 80px;
   height: 70px;
   border: 1px solid #f1f0eb;
 }
