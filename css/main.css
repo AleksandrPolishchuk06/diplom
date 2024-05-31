@@ -678,7 +678,7 @@
 @media (max-width: 607px) {
   .buyer_conditions {
     display: grid;
-    width: 100%;
+    width: 99%;
     padding: 0;
     margin: 0 auto;
   }
