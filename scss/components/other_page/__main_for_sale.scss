@@ -123,6 +123,23 @@
             }
         }
     }
+
+    .pagination {
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 20px 0;
+        color: black !important;
+
+        .page-link {
+            color: black !important;
+            background-color: transparent !important;
+        }
+
+        .page-link:hover {
+            background-color: $main_font_color !important;
+        }
+
+    }
 }
 
 @media (max-width: 607px) {

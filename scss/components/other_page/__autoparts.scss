@@ -25,6 +25,7 @@
             text-align: center;
             font-size: 30px;
             font-weight: 500;
+            text-transform: uppercase;
 
         }
 
@@ -50,6 +51,7 @@
                 .autoparts_cart_title {
                     font-size: 18px;
                     font-weight: 700;
+                    text-transform: uppercase;
                 }
 
                 .autoparts_card_btn {
@@ -93,6 +95,25 @@
 
                 }
             }
+
+
+        }
+
+        .pagination {
+            justify-content: center !important;
+            align-items: center !important;
+            margin: 20px 0;
+            color: black !important;
+
+            .page-link {
+                color: black !important;
+                background-color: transparent !important;
+            }
+
+            .page-link:hover {
+                background-color: $main_font_color !important;
+            }
+
         }
     }
 

@@ -1910,6 +1910,19 @@
   background-repeat: no-repeat;
   background-size: 65%;
 }
+.main_for_sale .pagination {
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 20px 0;
+  color: black !important;
+}
+.main_for_sale .pagination .page-link {
+  color: black !important;
+  background-color: transparent !important;
+}
+.main_for_sale .pagination .page-link:hover {
+  background-color: white !important;
+}
 
 @media (max-width: 607px) {
   .main_page_sale {
@@ -2152,6 +2165,7 @@
   text-align: center;
   font-size: 30px;
   font-weight: 500;
+  text-transform: uppercase;
 }
 .main_autoparts .autoparts_card .autoparts_item {
   display: flex;
@@ -2174,6 +2188,7 @@
 .main_autoparts .autoparts_card .autoparts_item div .autoparts_cart_title {
   font-size: 18px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 .main_autoparts .autoparts_card .autoparts_item div .autoparts_card_btn {
   color: black;
@@ -2303,6 +2318,19 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 80%;
+}
+.main_autoparts .autoparts_card .pagination {
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 20px 0;
+  color: black !important;
+}
+.main_autoparts .autoparts_card .pagination .page-link {
+  color: black !important;
+  background-color: transparent !important;
+}
+.main_autoparts .autoparts_card .pagination .page-link:hover {
+  background-color: white !important;
 }
 
 @media (max-width: 607px) {
