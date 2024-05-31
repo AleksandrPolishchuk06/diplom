@@ -15,8 +15,11 @@
             align-items: center;
             margin-bottom: 0;
 
+
             .header_custom_item:not(last-child) {
                 margin-right: 20px;
+                @extend .hvr;
+
             }
         }
 
@@ -31,6 +34,8 @@
                 color: $border_white_color !important;
                 background-color: $border_color_black;
                 padding: 15px 40px;
+
+
             }
 
             .header_logo_whatsap {

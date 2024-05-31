@@ -1994,7 +1994,7 @@
   background-size: 100%;
 }
 .main_service .main_baner_service_title {
-  font-size: 25vw;
+  font-size: 20vw;
   text-align: center;
 }
 
@@ -2148,6 +2148,11 @@
     transform: translateY(0px);
     transform: translateX(0);
   }
+}
+
+.hvr:hover, .header .header_custom_nav .header_custom_item:hover:not(last-child) {
+  color: red;
+  cursor: pointer;
 }
 
 .main_autoparts {
