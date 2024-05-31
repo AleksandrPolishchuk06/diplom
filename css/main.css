@@ -365,6 +365,9 @@
 }
 
 @media (max-width: 999px) {
+  .second_baner {
+    width: 100vw;
+  }
   .second_baner .second_baner_card {
     position: relative;
     height: -moz-fit-content;
