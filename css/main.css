@@ -796,6 +796,10 @@
   border-bottom: 1px solid #000;
   border-top: 1px solid #000;
 }
+.header .header_page .nav-link:hover {
+  color: red !important;
+  font-weight: 500;
+}
 .header .header_page_logo {
   width: 201px;
   height: 52px;
@@ -2043,6 +2047,10 @@
   border-bottom: 1px solid white !important;
   border-top: 1px solid white !important;
 }
+.header_white .header_page .nav-link:hover, .main_page .header .header_page .nav-link:hover, .main_page_sale .header .header_page .nav-link:hover {
+  color: red !important;
+  font-weight: 500;
+}
 .header_white .header_page_logo, .main_page .header .header_page_logo, .main_page_sale .header .header_page_logo {
   width: 201px;
   height: 52px;
@@ -2053,12 +2061,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.header_white .header_page .header_pege_nav .for_sale_link, .main_page .header .header_page .header_pege_nav .for_sale_link, .main_page_sale .header .header_page .header_pege_nav .for_sale_link {
-  margin-right: 30px;
-  color: white !important;
-  text-decoration: none;
-  font-size: 16px;
 }
 .header_white .navbar, .main_page .header .navbar, .main_page_sale .header .navbar {
   width: 100vw;
@@ -2151,7 +2153,7 @@
 }
 
 .hvr:hover, .header .header_custom_nav .header_custom_item:hover:not(last-child) {
-  color: red;
+  color: red !important;
   cursor: pointer;
 }
 

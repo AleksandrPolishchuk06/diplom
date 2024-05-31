@@ -55,6 +55,11 @@
         border-bottom: 1px solid $black_bg_btn_header;
         border-top: 1px solid $black_bg_btn_header;
 
+        .nav-link:hover {
+            color: red !important;
+            font-weight: 500;
+        }
+
         &_logo {
             width: 201px;
             height: 52px;
