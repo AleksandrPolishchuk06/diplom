@@ -1,0 +1,99 @@
+.second_baner {
+    width: 100%;
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 50% 50%;
+    gap: 0 20px;
+    padding: 0 5%;
+    margin-top: 50px;
+
+    .second_baner_card {
+        position: relative;
+        height: fit-content;
+
+        .second_baner_card_text {
+            position: absolute;
+            @include font_style(400, 49px, 0.12em, $main_font_color);
+            top: 20px;
+            left: 20px;
+            line-height: 130%;
+        }
+
+        .second_baner_card_btn {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            border: 1px solid #4f4f4f;
+            border-radius: 10px;
+            padding: 10px;
+            padding: 23px 44px;
+            backdrop-filter: blur(4px);
+            background-color: rgba(255, 255, 255, 0.01);
+            color: $main_font_color;
+            text-decoration: none;
+        }
+
+        .second_baner_card_mobile {
+            width: 100%;
+        }
+
+        .second_baner_card_img {
+            width: 100%;
+        }
+
+    }
+
+    .second_baner_card_box {
+        .second_baner_card {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media (max-width: 999px) {
+
+    .second_baner {
+        .second_baner_card {
+            position: relative;
+            height: fit-content;
+            margin-bottom: 10px;
+
+            .second_baner_card_text {
+                font-size: 20px;
+
+            }
+
+            .second_baner_card_btn {
+
+                padding: 10px 20px;
+
+            }
+        }
+    }
+
+}
+
+@media (max-width: 607px) {
+    .second_baner {
+        width: 100%;
+        display: grid;
+        justify-self: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 0 20px;
+        padding: 0;
+        margin-top: 10px;
+
+        .second_baner_card {
+            position: relative;
+            height: fit-content;
+            margin-bottom: 10px;
+
+            .second_baner_card_text {
+                font-size: 20px;
+
+            }
+        }
+    }
+
+}

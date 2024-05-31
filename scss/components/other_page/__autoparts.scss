@@ -1,0 +1,110 @@
+.main_autoparts {
+    display: grid;
+    width: 100%;
+    align-self: center;
+    grid-template-columns: minmax(252px, 20%) auto;
+    padding-top: 20px;
+
+    .main_autoparts_filter_price {
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+
+        .main_autoparts_price {
+            display: flex;
+            gap: 10px;
+        }
+
+    }
+
+
+
+    .autoparts_card {
+
+        .autoparts_title {
+            text-align: center;
+            font-size: 30px;
+            font-weight: 500;
+
+        }
+
+        .autoparts_item {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 1%;
+            gap: 10px;
+
+            & div {
+                padding: 5px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+
+                width: 300px;
+                height: 300px;
+                border: 1px solid $main_font_color;
+                border-radius: 10px;
+
+                .autoparts_cart_title {
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+
+                .autoparts_card_btn {
+                    color: black;
+                    padding: 10px 20px;
+                    border: 1px solid $main_font_color;
+                    border-radius: 10px;
+                    backdrop-filter: blur(4px);
+                    background-color: rgba(185, 161, 161, 0.2);
+
+                    &:hover {
+                        background-color: rgba(0, 0, 0, 0.432);
+                        color: $main_font_color;
+
+
+                    }
+
+
+                }
+
+
+            }
+
+            & div:hover {
+                background-size: 90%;
+                cursor: pointer;
+                transition-duration: 0.5s;
+                background-color: $main_font_color;
+                backdrop-filter: blur(4px);
+
+
+
+            }
+
+            @each $item in 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 {
+                .item#{$item} {
+                    background-image: url(../../../image/autoparts/#{$item}.png);
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 80%;
+
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 607px) {
+
+
+    .main_autoparts {
+        display: grid;
+        width: 100%;
+        align-self: center;
+        grid-template-columns: 1fr;
+    }
+}

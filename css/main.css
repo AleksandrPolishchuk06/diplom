@@ -4,8 +4,9 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-  text-decoration: none;
+  box-sizing: border-box !important;
+  list-style-type: none !important;
+  text-decoration: none !important;
 }
 
 .other_conditions .accordion {
@@ -120,6 +121,7 @@
   border: 1px solid black !important;
   border-radius: 10px;
   padding: 20px 0px 20px 25px;
+  font-style: "Eurostile Extended", sans-serif !important;
 }
 .form_register .form_valid input:focus, .form_register_footer .form_valid input:focus {
   box-shadow: 0 10px 10px -10px, 0 10px 10px -10px black;
@@ -128,22 +130,22 @@
   border: 2px solid green !important;
 }
 .form_register .form_valid input:focus:invalid, .form_register_footer .form_valid input:focus:invalid {
-  border: 1.5px solid #E30A17 !important;
+  border: 2px solid #e30a17 !important;
 }
 .form_register .modal-title, .form_register_footer .modal-title {
   color: white;
 }
 .form_register .btn, .form_register_footer .btn {
   color: black !important;
-  background-color: transparent;
+  background-color: #f1f0eb !important;
   border: 1px solid transparent;
 }
 .form_register .btn-primary, .form_register_footer .btn-primary {
   color: black !important;
   -webkit-backdrop-filter: blur(6px) !important;
           backdrop-filter: blur(6px) !important;
-  background-color: rgba(81, 80, 75, 0.1) !important;
-  border-color: #f1f0eb;
+  background-color: rgba(153, 149, 127, 0.2) !important;
+  border-color: black;
   border: 1px solid #4f4f4f !important;
   padding: 10px 30px !important;
 }
@@ -163,7 +165,7 @@
   width: 100%;
   -webkit-backdrop-filter: blur(4px) !important;
           backdrop-filter: blur(4px) !important;
-  background-color: rgba(81, 80, 75, 0.1) !important;
+  background-color: rgba(81, 80, 75, 0.2) !important;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 30px;
 }
@@ -181,8 +183,6 @@
   display: grid;
   grid-template-columns: 1fr;
   background-color: #f1f0eb;
-  list-style-type: none !important;
-  text-decoration: none !important;
   font-family: "Eurostile Extended", sans-serif !important;
 }
 
@@ -333,7 +333,7 @@
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   background-color: rgba(255, 255, 255, 0.01);
-  color: #fff;
+  color: white;
   text-decoration: none;
 }
 .second_baner .second_baner_card .second_baner_card_mobile {
@@ -435,17 +435,6 @@
 }
 .choose_type .choose_type_body_box .body_type .body_type_img {
   width: 100%;
-  animation: animation_name3;
-}
-@keyframes animation_name3 {
-  0% {
-    transform: translateY(-1px);
-    transform: translateX(-10px);
-  }
-  100% {
-    transform: translateY(0px);
-    transform: translateX(0);
-  }
 }
 .choose_type .choose_type_body_box .body_type .body_type_desc {
   font-weight: 400;
@@ -540,37 +529,51 @@
 }
 @media (min-width: 607px) and (max-width: 998px) {
   .hot_deals {
-    display: grid;
-    margin-top: 50px;
+    margin-top: 30px;
     padding: 0;
   }
 }
 @media (max-width: 606px) {
   .hot_deals {
-    display: grid;
-    margin-top: 50px;
+    margin-top: 20px;
+  }
+}
+.hot_deals {
+  display: grid;
+  margin-top: 50px;
+  padding: 0 3%;
+}
+.hot_deals .hot_deals_title {
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 0.05em;
+  color: black;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.hot_deals .hot_deals_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 5px;
+}
+.hot_deals .hot_deals_box .hot_deals_card:hover {
+  background-color: white;
+}
+.hot_deals .hot_deals_box .hot_deals_card:hover .hot_deals_card_brand {
+  color: black;
+}
+@media (min-width: 607px) and (max-width: 998px) {
+  .hot_deals {
+    margin-top: 30px;
     padding: 0;
   }
 }
-.masseratti {
-  margin: 30px auto;
-  width: 95%;
-  height: 55vh;
-  padding: 5%;
-  justify-content: center;
-  background-image: url(../image/maseratti/1.jpg);
-  filter: grayscale(100%);
-  background-position: center;
-  background-size: cover;
-  background-position: center;
-  border-radius: 30px;
+@media (max-width: 606px) {
+  .hot_deals {
+    margin-top: 20px;
+  }
 }
-
-.masseratti:hover {
-  filter: grayscale(0%);
-  transition-duration: 1s;
-}
-
 .buyer_conditions {
   display: grid;
   padding: 0 3%;
@@ -655,7 +658,9 @@
     margin: 0 auto;
   }
   .buyer_conditions .buyer_conditions_title {
-    margin-bottom: 20px;
+    font-size: 20px;
+    margin: 20px 0;
+    text-align: center;
   }
   .buyer_conditions .buyer_conditions_box {
     display: grid;
@@ -672,50 +677,12 @@
   }
   .buyer_conditions .buyer_conditions_box .buyer_conditions_card_num {
     margin-bottom: 10px;
-  }
-  .buyer_conditions .buyer_conditions_box .buyer_conditions_card_title {
-    font-weight: 600;
-    font-size: 20px;
-    margin-bottom: 5px;
-  }
-}
-@media (max-width: 606px) {
-  .buyer_conditions {
-    width: 98%;
-  }
-  .buyer_conditions .buyer_conditions_title {
-    font-size: 20px;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  .buyer_conditions .buyer_conditions_box .buyer_conditions_card1,
-  .buyer_conditions .buyer_conditions_box .buyer_conditions_card2,
-  .buyer_conditions .buyer_conditions_box .buyer_conditions_card3,
-  .buyer_conditions .buyer_conditions_box .buyer_conditions_card4 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .buyer_conditions .buyer_conditions_box .buyer_conditions_card5 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .buyer_conditions .buyer_conditions_box .buyer_conditions_card_num {
-    margin-bottom: 10px;
-    justify-self: start;
     font-size: 18px;
   }
   .buyer_conditions .buyer_conditions_box .buyer_conditions_card_title {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 5px;
-  }
-  .buyer_conditions .buyer_conditions_box .buyer_conditions_card_desc {
-    text-align: center;
-    font-size: 14px;
   }
 }
 .other_conditions {
@@ -1083,18 +1050,6 @@
     border-radius: 0px;
     width: 100%;
   }
-  .main_goods_card .goods_card .goods_card_box .card_car_char_list .char_list_btn {
-    border: 1px solid #4f4f4f;
-    border-radius: 8px;
-    padding: 4% 20%;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 130%;
-    letter-spacing: 0.17em;
-    color: #4f4f4f;
-    text-align: center;
-    text-decoration: none !important;
-  }
 }
 @media (max-width: 607px) {
   .main_goods_card {
@@ -1177,16 +1132,7 @@
     width: 100%;
   }
   .main_goods_card .goods_card .goods_card_box .card_car_char_list .char_list_btn {
-    border: 1px solid #4f4f4f;
     border-radius: 8px;
-    padding: 4% 20%;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 130%;
-    letter-spacing: 0.17em;
-    color: #4f4f4f;
-    text-align: center;
-    text-decoration: none !important;
   }
 }
 .footer_dubl, .footer {
@@ -1990,8 +1936,7 @@
     font-size: 16px;
     letter-spacing: 0.01em;
     color: black;
-    margin-top: 40px;
-    margin-bottom: 10px;
+    margin: 40px 0 10px 0;
   }
   .main_for_sale .acordeon_filter_for_sale .main_baner_filter_sort .form-select {
     width: 40%;
@@ -2030,49 +1975,9 @@
   width: 100%;
   height: 100%;
   padding: 5%;
-  background-image: url(../image/pngwing.com\ \(5\).png);
+  background-image: url(../../../image/pngwing.com\ \(4\).png);
   background-position: center;
   background-size: 70%;
-}
-.main .main_title {
-  font-size: 40px;
-  font-weight: 600;
-  color: black;
-  text-align: center;
-  padding: 3%;
-}
-.main .servising {
-  padding: 5%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 5%;
-  margin-bottom: 5%;
-}
-.main .servising .servising_box {
-  width: 45%;
-  height: 100%;
-  border: 1px solid #000;
-  margin-bottom: 5%;
-  text-align: center;
-  border-radius: 30px;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
-  background-color: rgba(255, 255, 255, 0.01);
-}
-.main .servising .servising_box .servising_box_title {
-  font-size: 20px;
-  font-weight: 800;
-  color: black;
-  text-align: center;
-  padding: 3%;
-}
-.main .servising .servising_box .servising_box_desc {
-  font-size: 18px;
-  font-weight: 700;
-  color: black;
-  text-align: center;
 }
 
 .header_white, .main_page .header, .main_page_sale .header {
@@ -2207,4 +2112,204 @@
   text-transform: uppercase;
   padding: 20px 10vw;
   text-decoration: none !important;
+}
+
+.choose_type_body_box .body_type:hover {
+  animation: animation_name3 1s, ease, infinite;
+  cursor: pointer;
+}
+.choose_type_body_box .body_type .body_type_img {
+  animation: animation_name3;
+}
+@keyframes animation_name3 {
+  0% {
+    transform: translateY(-1px);
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+    transform: translateX(0);
+  }
+}
+
+.main_autoparts {
+  display: grid;
+  width: 100%;
+  align-self: center;
+  grid-template-columns: minmax(252px, 20%) auto;
+  padding-top: 20px;
+}
+.main_autoparts .main_autoparts_filter_price {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+.main_autoparts .main_autoparts_filter_price .main_autoparts_price {
+  display: flex;
+  gap: 10px;
+}
+.main_autoparts .autoparts_card .autoparts_title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+}
+.main_autoparts .autoparts_card .autoparts_item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1%;
+  gap: 10px;
+}
+.main_autoparts .autoparts_card .autoparts_item div {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  height: 300px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.main_autoparts .autoparts_card .autoparts_item div .autoparts_cart_title {
+  font-size: 18px;
+  font-weight: 700;
+}
+.main_autoparts .autoparts_card .autoparts_item div .autoparts_card_btn {
+  color: black;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  background-color: rgba(185, 161, 161, 0.2);
+}
+.main_autoparts .autoparts_card .autoparts_item div .autoparts_card_btn:hover {
+  background-color: rgba(0, 0, 0, 0.432);
+  color: white;
+}
+.main_autoparts .autoparts_card .autoparts_item div:hover {
+  background-size: 90%;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  background-color: white;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+.main_autoparts .autoparts_card .autoparts_item .item1 {
+  background-image: url(../../../image/autoparts/1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+.main_autoparts .autoparts_card .autoparts_item .item2 {
+  background-image: url(../../../image/autoparts/2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+.main_autoparts .autoparts_card .autoparts_item .item3 {
+  background-image: url(../../../image/autoparts/3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+.main_autoparts .autoparts_card .autoparts_item .item4 {
+  background-image: url(../../../image/autoparts/4.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+.main_autoparts .autoparts_card .autoparts_item .item5 {
+  background-image: url(../../../image/autoparts/5.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+.main_autoparts .autoparts_card .autoparts_item .item6 {
+  background-image: url(../../../image/autoparts/6.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+.main_autoparts .autoparts_card .autoparts_item .item7 {
+  background-image: url(../../../image/autoparts/7.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+.main_autoparts .autoparts_card .autoparts_item .item8 {
+  background-image: url(../../../image/autoparts/8.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+.main_autoparts .autoparts_card .autoparts_item .item9 {
+  background-image: url(../../../image/autoparts/9.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+.main_autoparts .autoparts_card .autoparts_item .item10 {
+  background-image: url(../../../image/autoparts/10.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+.main_autoparts .autoparts_card .autoparts_item .item11 {
+  background-image: url(../../../image/autoparts/11.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+.main_autoparts .autoparts_card .autoparts_item .item12 {
+  background-image: url(../../../image/autoparts/12.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+.main_autoparts .autoparts_card .autoparts_item .item13 {
+  background-image: url(../../../image/autoparts/13.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+.main_autoparts .autoparts_card .autoparts_item .item14 {
+  background-image: url(../../../image/autoparts/14.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+.main_autoparts .autoparts_card .autoparts_item .item15 {
+  background-image: url(../../../image/autoparts/15.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+.main_autoparts .autoparts_card .autoparts_item .item16 {
+  background-image: url(../../../image/autoparts/16.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+.main_autoparts .autoparts_card .autoparts_item .item17 {
+  background-image: url(../../../image/autoparts/17.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+.main_autoparts .autoparts_card .autoparts_item .item18 {
+  background-image: url(../../../image/autoparts/18.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+
+@media (max-width: 607px) {
+  .main_autoparts {
+    display: grid;
+    width: 100%;
+    align-self: center;
+    grid-template-columns: 1fr;
+  }
 }/*# sourceMappingURL=main.css.map */

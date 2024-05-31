@@ -1,0 +1,202 @@
+//style for Acordeon in other condidion section
+.other_conditions {
+    .accordion {
+        width: 100vw;
+    }
+
+    .accordion-item {
+        backdrop-filter: blur(4px);
+        background-color: rgba(255, 255, 255, 0.01);
+        border: 1px solid $border_color_gray;
+    }
+
+    .accordion-button:not(.collapsed) {
+        color: $border_white_color;
+        backdrop-filter: blur(4px);
+        background-color: rgba(87, 83, 83, 0.01);
+        box-shadow: none;
+    }
+
+    .accordion-button {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 1rem 1.25rem;
+        font-size: 1rem;
+        color: $border_white_color;
+        text-align: center;
+        backdrop-filter: blur(4px);
+        background-color: rgba(81, 80, 75, 0.1);
+        border: 0;
+    }
+
+    .accordion-body {
+        color: $border_white_color;
+        text-align: left;
+    }
+}
+
+//style for Acordeon in for_sale section
+
+.acordeon_filter_for_sale {
+    .accordion {
+        width: 100vw;
+    }
+
+    .accordion-item {
+        backdrop-filter: blur(4px);
+        background-color: rgba(255, 255, 255, 0.01);
+        border: 1px solid $border_color_gray;
+    }
+
+    .accordion-button:not(.collapsed) {
+        color: $border_color_black;
+        backdrop-filter: blur(4px);
+        background-color: rgba(87, 83, 83, 0.01);
+        box-shadow: none;
+    }
+
+    .accordion-button {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 1rem 1.25rem;
+        font-size: 1rem;
+        color: $black_font_color;
+        text-align: center;
+        backdrop-filter: blur(4px);
+        background-color: rgba(81, 80, 75, 0.1);
+        border: 0;
+    }
+
+    .accordion-body {
+        color: $border_color_black;
+        text-align: left;
+    }
+}
+
+//style for carusel in  the goods-card-page
+.main_goods_card {
+    .r-30 {
+        border-radius: 30px;
+    }
+
+    .carousel-control-prev {
+        top: 80%;
+        left: 75%;
+        width: 50px;
+        height: 30px;
+        background: $border_color_gray;
+        opacity: 0.5;
+    }
+
+    .carousel-control-next {
+        top: 80%;
+        right: 5%;
+        width: 50px;
+        height: 30px;
+        background: $border_color_gray;
+        opacity: 0.5;
+    }
+}
+
+.form_register {
+    .form_valid {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+
+        .input_btn {
+            cursor: pointer;
+            border: 1px solid $border_color_black;
+            border-radius: 10px;
+            color: $main_font_color;
+            backdrop-filter: blur(4px);
+            background-color: rgba(255, 255, 255, 0.01);
+            padding: 10px 25px;
+        }
+
+        & input {
+            width: 100%;
+            outline: none;
+            margin: 10px 0;
+            border: 1px solid $border_color_black !important;
+            border-radius: 10px;
+            padding: 20px 0px 20px 25px;
+            font-style: $main_font_family !important;
+        }
+
+        & input:focus {
+            box-shadow:
+                0 10px 10px -10px,
+                0 10px 10px -10px black;
+        }
+
+        & input:valid {
+            border: 2px solid green !important;
+        }
+
+        & input:focus:invalid {
+            border: 2px solid #e30a17 !important;
+        }
+    }
+
+    // style for form bootstap
+    .modal-title {
+        color: $main_font_color;
+    }
+
+    .btn {
+        color: $black_font_color !important;
+        background-color: $background_color !important;
+        border: 1px solid transparent;
+    }
+
+    .btn-primary {
+        color: $black_font_color !important;
+        backdrop-filter: blur(6px) !important;
+        background-color: rgba(153, 149, 127, 0.2) !important;
+        border-color: $border_color_black;
+        border: 1px solid $border_color_gray !important;
+        padding: 10px 30px !important;
+    }
+
+    .btn-close {
+        box-sizing: content-box;
+        width: 1em;
+        height: 1em;
+        padding: 0.25em 0.25em;
+        color: white !important;
+        border: 0;
+        border-radius: 0.25rem;
+        opacity: 1;
+    }
+
+    .modal-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        backdrop-filter: blur(4px) !important;
+        background-color: rgba(81, 80, 75, 0.2) !important;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 30px;
+    }
+}
+
+// the end for acordeon styles
+
+.form_register_footer {
+    @extend .form_register;
+
+    .btn {
+        color: $main_font_color !important;
+        background-color: black !important;
+    }
+
+    .btn-primary {
+        color: $main_font_color !important;
+        padding: 10px 5vw !important;
+    }
+}

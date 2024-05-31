@@ -1,0 +1,24 @@
+.choose_type_body_box {
+    .body_type:hover {
+        animation: animation_name3 1s, ease, infinite;
+        cursor: pointer;
+    }
+
+    .body_type {
+        .body_type_img {
+            animation: animation_name3;
+
+            @keyframes animation_name3 {
+                0% {
+                    transform: translateY(-1px);
+                    transform: translateX(-10px);
+                }
+
+                100% {
+                    transform: translateY(0px);
+                    transform: translateX(0);
+                }
+            }
+        }
+    }
+}

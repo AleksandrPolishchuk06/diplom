@@ -1,0 +1,66 @@
+.other_conditions {
+    background-image: url(../image/conditions/condition_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px auto;
+    width: 95vw;
+    height: 98vh;
+    background-position: center;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: end;
+
+    .other_conditions_mobile {
+        display: none;
+    }
+
+    .other_conditions_destop {
+        width: 95vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: end;
+
+        .other_conditions_box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-radius: 10px;
+            width: 260px;
+            height: 250px;
+            backdrop-filter: blur(1px);
+            background: rgba(255, 255, 255, 0.6);
+            padding: 40px 5px;
+            gap: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+
+            .other_conditions_title {
+                @include font_style(400, 20px, 0.01em, $black_font_color);
+                line-height: 130%;
+                text-align: center;
+            }
+
+            .other_conditions_desc {
+                @include font_style(400, 16px, 0.01em, $black_font_color);
+                line-height: 130%;
+            }
+        }
+    }
+}
+
+@media (max-width: 999px) {
+    .other_conditions {
+        width: 100%;
+
+        .other_conditions_destop {
+            display: none !important;
+        }
+
+        .other_conditions_mobile {
+            display: block !important;
+        }
+    }
+}

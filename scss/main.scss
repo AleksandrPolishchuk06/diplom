@@ -4,23 +4,26 @@
 @import "../scss/utilits/var/_fonts";
 
 // components -main page
-@import "../scss/components/_tempelates";
-@import "../scss/components/_body";
-@import "../scss/components/_main_baner";
-@import "../scss/components/_second_baner";
-@import "../scss/components/_choose_type";
-@import "../scss/components/_hot_deals";
-@import "../scss/components/_maseratti";
-@import "../scss/components/_buyer_conditions";
-@import "../scss/components/_other_conditions";
-@import "../scss/components/_fotter";
-@import "../scss/extend_componentions/_header";
-@import "../scss/components/_main_goods_card_section";
+@import "../scss/components/other_page/_tempelates";
+@import "../scss/components/_body_global";
+@import "../scss/components/main_page/_main_baner";
+@import "../scss/components/main_page/_second_baner";
+@import "../scss/components/main_page/_choose_type_main_page";
+@import "../scss/components/main_page/_hot_deals";
+@import "../scss/components/main_page/_hot_deals";
+@import "../scss/components/main_page/_buyer_conditions_main_page";
+@import "../scss/components/main_page/_other_conditions";
+@import "../scss/components/main_page/_fotter_main_page";
+@import "../scss/extend_componentions/_header_black";
+@import "../scss/components/other_page/_gods_card_page";
 @import "../scss/extend_componentions/_fotter_dubl";
 @import "../scss/extend_componentions/_goods_cadr";
-@import "../scss/components/_main_for_sale";
-@import "../scss/components/_servising";
+@import "../scss/components/other_page/_main_for_sale";
+@import "../scss/components/other_page/_servising_page";
 @import "../scss/extend_componentions/_header_white";
 @import "../scss/extend_componentions/_navigation_btn";
+@import "../scss/extend_componentions/_animation";
+@import "../scss/components/other_page/_autoparts";
+
 
 // components-goods card
