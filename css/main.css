@@ -901,7 +901,7 @@
 }
 .main_goods_card {
   display: grid;
-  width: 100%;
+  width: 100vw;
   padding: 3%;
   justify-self: center;
   text-decoration: none !important;
@@ -1036,7 +1036,7 @@
 @media (max-width: 998px) {
   .main_goods_card {
     display: grid;
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
     text-decoration: none !important;
   }
