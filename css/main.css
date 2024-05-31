@@ -295,13 +295,13 @@
     font-size: 40px;
     text-align: center;
     z-index: -1;
-    color: rgb(99, 247, 1);
+    color: white;
   }
   .main_page .main_baner .main_baner_desc, .main_page_sale .main_baner .main_baner_desc {
     font-size: 30px;
     text-align: center;
     font-weight: 600;
-    color: rgb(99, 247, 1);
+    color: white;
   }
   .main_page .main_baner .box, .main_page_sale .main_baner .box {
     align-self: center;
