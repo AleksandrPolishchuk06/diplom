@@ -9,6 +9,20 @@
   text-decoration: none !important;
 }
 
+.choose_type_body:hover {
+  background-color: #4071cb;
+}
+.choose_type_body:hover .choose_type_brand {
+  background-color: white;
+}
+
+.choose_type_brand:hover {
+  background-color: #4071cb;
+}
+.choose_type_brand:hover .choose_type_body {
+  background-color: white;
+}
+
 .other_conditions .accordion {
   width: 100vw;
 }
@@ -401,9 +415,6 @@
   padding: 3%;
   gap: 0;
 }
-.choose_type .choose_type_nav .choose_type_body:hover .choose_type_body_box {
-  display: none;
-}
 .choose_type .choose_type_nav .choose_type_body {
   border-radius: 10px 0px 0px 10px;
   width: auto;
@@ -423,6 +434,9 @@
   font-size: 16px;
   line-height: 130%;
   border: 1px solid white;
+}
+.choose_type .choose_type_nav .choose_type_brand:hover {
+  background-color: black;
 }
 .choose_type .choose_type_body_box {
   padding: 3%;
@@ -2153,9 +2167,10 @@
   }
 }
 
-.hvr:hover, .main_autoparts .autoparts_card .autoparts_item div .autoparts_card_btn:hover, .header .header_custom_nav .header_custom_item:hover:not(last-child), .main_goods_card .goods_card .goods_card_nav .goods_card_nav_link:hover, .main_goods_card .goods_card .goods_card_box .card_car_char_list .char_list_btn:hover, .footer_dubl .footer_information .footer_information_nav .footer_information_nav .footer_nav_item a:hover, .footer .footer_information .footer_information_nav .footer_information_nav .footer_nav_item a:hover, .hot_deals_card_draft .hot_deals_btn:hover, .hot_deals .hot_deals_box .hot_deals_card .hot_deals_btn:hover {
+.hvr:hover, .main_autoparts .autoparts_card .autoparts_item div .autoparts_card_btn:hover, .choose_type .choose_type_btn:hover, .header .header_custom_nav .header_custom_item:hover:not(last-child), .main_goods_card .goods_card .goods_card_nav .goods_card_nav_link:hover, .main_goods_card .goods_card .goods_card_box .card_car_char_list .char_list_btn:hover, .footer_dubl .footer_information .footer_information_nav .footer_information_nav .footer_nav_item a:hover, .footer .footer_information .footer_information_nav .footer_information_nav .footer_nav_item a:hover, .hot_deals_card_draft .hot_deals_btn:hover, .hot_deals .hot_deals_box .hot_deals_card .hot_deals_btn:hover {
   color: rgba(255, 0, 0, 0.729) !important;
   cursor: pointer;
+  font-weight: 700;
 }
 
 .main_autoparts {
