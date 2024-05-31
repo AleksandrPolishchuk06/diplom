@@ -28,6 +28,7 @@
     width: 100vw;
     align-self: center;
     grid-template-columns: minmax(252px, 20%) auto;
+    overflow-x: hidden !important;
 
     .acordeon_filter_for_sale {
         display: none;
