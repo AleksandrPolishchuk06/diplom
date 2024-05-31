@@ -1,8 +1,14 @@
-.main {
+.main_baner {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     padding: 5%;
-    background-image: url(../image/pngwing.com\ \(4\).png);
+    background-image: url(../../../image/pngwing.com\ \(4\).png);
     background-position: center;
-    background-size: 70%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    .main_baner_service_title {
+        font-size: 25vw;
+        text-align: center;
+    }
 }
