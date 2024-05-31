@@ -20,7 +20,12 @@
         .choose_type_body {
             @include btn_style(10px 0px 0px 10px, auto, auto, center, 400, 16px, 130%);
             @extend .choose_type_btn_extend;
-            background-color: $blue_background_swipe;
+            background-color: rgb(204, 201, 201);
+
+            &:hover {
+                background-color: $blue_background_swipe;
+
+            }
 
         }
 
@@ -28,10 +33,12 @@
         .choose_type_brand {
             @include btn_style(0px 10px 10px 0px, auto, auto, center, 400, 16px, 130%);
             @extend .choose_type_btn_extend;
-            border: 1px solid $border_white_color;
+            background-color: rgb(204, 201, 201);
+            border: 1px solid $blue_background_swipe;
 
             &:hover {
-                background-color: black;
+                background-color: $blue_background_swipe;
+
             }
         }
     }

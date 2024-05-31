@@ -423,6 +423,9 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 130%;
+  background-color: rgb(204, 201, 201);
+}
+.choose_type .choose_type_nav .choose_type_body:hover {
   background-color: #4071cb;
 }
 .choose_type .choose_type_nav .choose_type_brand {
@@ -433,10 +436,11 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 130%;
-  border: 1px solid white;
+  background-color: rgb(204, 201, 201);
+  border: 1px solid #4071cb;
 }
 .choose_type .choose_type_nav .choose_type_brand:hover {
-  background-color: black;
+  background-color: #4071cb;
 }
 .choose_type .choose_type_body_box {
   padding: 3%;
@@ -2170,7 +2174,7 @@
 .hvr:hover, .main_autoparts .autoparts_card .autoparts_item div .autoparts_card_btn:hover, .choose_type .choose_type_btn:hover, .header .header_custom_nav .header_custom_item:hover:not(last-child), .main_goods_card .goods_card .goods_card_nav .goods_card_nav_link:hover, .main_goods_card .goods_card .goods_card_box .card_car_char_list .char_list_btn:hover, .footer_dubl .footer_information .footer_information_nav .footer_information_nav .footer_nav_item a:hover, .footer .footer_information .footer_information_nav .footer_information_nav .footer_nav_item a:hover, .hot_deals_card_draft .hot_deals_btn:hover, .hot_deals .hot_deals_box .hot_deals_card .hot_deals_btn:hover {
   color: rgba(255, 0, 0, 0.729) !important;
   cursor: pointer;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .main_autoparts {
