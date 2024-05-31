@@ -18,6 +18,7 @@
                 margin-right: 10px;
                 color: $black_font_color;
                 text-decoration: none;
+                @extend .hvr;
             }
 
             &_item::before {
@@ -135,6 +136,7 @@
                     color: $border_color_gray;
                     text-align: center;
                     text-decoration: none !important;
+                    @extend .hvr;
                 }
             }
         }

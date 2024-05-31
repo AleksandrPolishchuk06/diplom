@@ -38,6 +38,7 @@
                     font-size: 12px;
                     color: $black_font_color;
                     text-decoration: none !important;
+                    @extend .hvr;
                 }
             }
         }

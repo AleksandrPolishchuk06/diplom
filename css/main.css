@@ -184,6 +184,7 @@
   grid-template-columns: 1fr;
   background-color: #f1f0eb;
   font-family: "Eurostile Extended", sans-serif !important;
+  overflow-x: hidden !important;
 }
 
 .main_page, .main_page_sale {
@@ -2152,8 +2153,8 @@
   }
 }
 
-.hvr:hover, .header .header_custom_nav .header_custom_item:hover:not(last-child) {
-  color: red !important;
+.hvr:hover, .main_autoparts .autoparts_card .autoparts_item div .autoparts_card_btn:hover, .header .header_custom_nav .header_custom_item:hover:not(last-child), .main_goods_card .goods_card .goods_card_nav .goods_card_nav_link:hover, .main_goods_card .goods_card .goods_card_box .card_car_char_list .char_list_btn:hover, .footer_dubl .footer_information .footer_information_nav .footer_information_nav .footer_nav_item a:hover, .footer .footer_information .footer_information_nav .footer_information_nav .footer_nav_item a:hover, .hot_deals_card_draft .hot_deals_btn:hover, .hot_deals .hot_deals_box .hot_deals_card .hot_deals_btn:hover {
+  color: rgba(255, 0, 0, 0.729) !important;
   cursor: pointer;
 }
 

@@ -80,6 +80,7 @@
         height: 45px;
         justify-content: center;
         text-decoration: none;
+        @extend .hvr;
     }
 
     .hot_deals_condition {

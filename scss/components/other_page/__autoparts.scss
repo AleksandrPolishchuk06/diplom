@@ -61,6 +61,7 @@
                     border-radius: 10px;
                     backdrop-filter: blur(4px);
                     background-color: rgba(185, 161, 161, 0.2);
+                    @extend .hvr;
 
                     &:hover {
                         background-color: rgba(0, 0, 0, 0.432);
