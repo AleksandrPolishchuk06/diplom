@@ -2,7 +2,7 @@
     @extend .main_page;
     // main-baner-main-page
     max-height: 320px;
-    width: 100%;
+    width: 100vw;
     overflow-x: hidden;
     border-radius: 0;
     padding: 0;
@@ -25,7 +25,7 @@
 
 .main_for_sale {
     display: grid;
-    width: 100%;
+    width: 100vw;
     align-self: center;
     grid-template-columns: minmax(252px, 20%) auto;
 
