@@ -90,6 +90,7 @@
         border-top: 1px solid $border_white_color;
         padding: 2% 2% 7% 2%;
 
+
         .footer_card {
             display: flex;
             flex-direction: column;
@@ -99,6 +100,7 @@
             border-radius: 7px;
             width: 15vw;
             height: 100px;
+
 
             .footer_logo_box {
                 display: flex;
@@ -116,6 +118,7 @@
                 line-height: 130%;
                 letter-spacing: 0.06em;
                 color: $black_font_color;
+
             }
         }
     }

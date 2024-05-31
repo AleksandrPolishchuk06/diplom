@@ -15,11 +15,7 @@
         padding: 3%;
         gap: 0;
 
-        .choose_type_body:hover {
-            .choose_type_body_box {
-                display: none;
-            }
-        }
+
 
         .choose_type_body {
             @include btn_style(10px 0px 0px 10px, auto, auto, center, 400, 16px, 130%);
@@ -28,10 +24,15 @@
 
         }
 
+
         .choose_type_brand {
             @include btn_style(0px 10px 10px 0px, auto, auto, center, 400, 16px, 130%);
             @extend .choose_type_btn_extend;
             border: 1px solid $border_white_color;
+
+            &:hover {
+                background-color: black;
+            }
         }
     }
 
@@ -72,6 +73,7 @@
         letter-spacing: 0.01em;
         color: $blue_background_swipe;
         text-decoration: none !important;
+        @extend .hvr;
     }
 }
 

@@ -1,3 +1,22 @@
+.choose_type_body:hover {
+    background-color: $blue_background_swipe;
+
+    .choose_type_brand {
+        background-color: white;
+    }
+
+}
+
+.choose_type_brand:hover {
+    background-color: $blue_background_swipe;
+
+    .choose_type_body {
+        background-color: white;
+    }
+}
+
+
+
 //style for Acordeon in other condidion section
 .other_conditions {
     .accordion {
