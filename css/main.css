@@ -289,16 +289,19 @@
     height: 98vh;
   }
   .main_page .main_baner, .main_page_sale .main_baner {
-    padding: 50px 20px 0 20px;
+    padding: 15vh 20px 0 20px;
   }
   .main_page .main_baner .main_baner_title, .main_page_sale .main_baner .main_baner_title {
     font-size: 40px;
     text-align: center;
     z-index: -1;
+    color: rgb(99, 247, 1);
   }
   .main_page .main_baner .main_baner_desc, .main_page_sale .main_baner .main_baner_desc {
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
+    font-weight: 600;
+    color: rgb(99, 247, 1);
   }
   .main_page .main_baner .box, .main_page_sale .main_baner .box {
     align-self: center;
