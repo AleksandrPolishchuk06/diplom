@@ -4,7 +4,7 @@
     height: 55vh;
     padding: 5%;
     justify-content: center;
-    background-image: url(../image/maseratti/1.jpg);
+    background-image: url(../../../image/maseratti/1.jpg);
     filter: grayscale(100%);
     background-position: center;
     background-size: cover;
@@ -16,9 +16,3 @@
     filter: grayscale(0%);
     transition-duration: 1s;
 }
-
-// @media (max-width:998px) {
-//     .masseratti {
-//         height: 100%;
-//     }
-// }
